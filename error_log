@@ -1,0 +1,3 @@
+[03-Apr-2015 00:54:30 America/Denver] PHP Fatal error:  Call to a member function cutstr() on a non-object in /home/worldgad/public_html/kidsidea.net/application/modules/home/views/content.php on line 194
+[03-Apr-2015 00:55:58 America/Denver] PHP Fatal error:  Call to a member function cutstr() on a non-object in /home/worldgad/public_html/kidsidea.net/application/modules/home/views/content.php on line 194
+[03-Apr-2015 00:58:40 America/Denver] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/worldgad/public_html/kidsidea.net/application/modules/home/views/content.php on line 194
