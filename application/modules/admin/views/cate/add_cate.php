@@ -48,12 +48,14 @@
                                         	<div class="form_items_right"><input type="text" name="cate_name" size="35" /></div>
                                    		 </div>
                                          <div class="form_items">
-                                    		<div class="form_items_left">Mô tả ngắn</div>
-                                        	<div class="form_items_right"><input name="cate_info" type="text" size="35"></div>
-                                   		 </div>
-                                         <div class="form_items">
                                     		<div class="form_items_left">Thứ tự</div>
                                         	<div class="form_items_right"><input name="cate_order" type="text" size="35"></div>
+                                   		 </div>
+										<div class="form_items">
+                                    		<div class="form_items_left">Mô tả ngắn</div>
+                                        	<div class="form_items_right">
+												<textarea name="cate_info" cols="28" rows="5"></textarea>
+											</div>
                                    		 </div>
                                          <div class="form_items">
                                     		<div class="form_items_left">SEO keywords</div>
