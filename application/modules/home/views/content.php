@@ -34,7 +34,7 @@
     <div class="threcls" style="width:298px" id="hotright">
       <div id="hottitle">
           <ul>
-            <li class="active"><a href="javascript:void(0)">Search</a></li>
+            <li class="active"><a href="javascript:void(0)" class="search">Search</a></li>
             <li><a href="javascript:void(0)">Top video</a></li>
           </ul>
         </div>
@@ -178,15 +178,15 @@
     <div class="heath haboxtitle">
       <h2><?php echo $catefour['cate_name']; ?></h2>
       <ul>
-      <?php if(isset($menuthree)){ ?>
-      <?php foreach($menuthree as $menu){ ?>
+      <?php if(isset($menufour)){ ?>
+      <?php foreach($menufour as $menu){ ?>
         <li><a href="<?php echo base_url().$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
       <?php } } ?>
       </ul>
     </div>
     <div class="haboxcontent">
-    <?php if(isset($listthree)){ ?>
-    <?php $i=1; foreach($listthree as $tablets){?>
+    <?php if(isset($listfour)){ ?>
+    <?php $i=1; foreach($listfour as $tablets){?>
       <div class="hacolums <?php if($i == 3){ echo "last";} ?>">
         <h3 class="hah3"><a href="<?php echo base_url().$tablets['cate_rewrite']."/".$tablets['post_title_rewrite']."-".$tablets['post_id']; ?>.html"><?php echo $tablets['post_title']; ?></a></h3>
         <div class="techhot">

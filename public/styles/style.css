@@ -5,11 +5,11 @@ ul{list-style-type:none}img{border:none}
 a{text-decoration:none;color:#333}
 fieldset{border:none}
 p{color:#555;line-height:18px}
-#header{width:940px;height:87px;margin:0px auto;padding-top:10px}
-#logo{width:300px;float:left;margin-top:0px}
-#logo img{margin-left:-15px}
+#header{width:940px;height:90px;margin:0px auto;}
+#weather{width:310px;height:72px;float:left;margin-top:0px}
 #midhead{width:300px;float:left;margin:0px 20px;text-align:center;padding-top:10px}
-#headris{width:300px;float:right}
+#midhead a.logo{width:340px;height:71px;background-image: url(../images/skin-smh.png);color:transparent}
+#headris{width:200px;float:right}
 #menu{width:100%;height:33px;background:#F9F9F9;background-image:-moz-linear-gradient(center top , #E0E4E5 2px, #F9F9F9 3px);border-top: 1px solid #A8B1B6;border-bottom: 1px solid #E0E4E5;}
 #menumid{width:940px;margin:0px auto;}
 #menumid ul{border-left:1px solid #DBE1E4;border-right:1px solid #DBE1E4;}
@@ -20,7 +20,7 @@ p{color:#555;line-height:18px}
 #menumid ul li:last-child{border:none}
 #content{width:940px;height:auto;margin:0px auto;margin-bottom:40px}
 #navmenu{height:17px;padding:10px 7px 10px 0px;border-bottom:1px solid #C8CED1;background-image:linear-gradient(#FFF, #F5F5F5 98%, #FFF 100%);}
-#navmenu h2{font-size:15px;float:left;text-transform:uppercase;color:#CD4727;}
+#navmenu h2{font-size:15px;float:left;text-transform:uppercase;color:#555;}
 #navmenu ul{float:right}
 #navmenu ul li{display:inline;margin-right:6px;padding-right:6px;border-right:1px solid #7FBDE1;color:#555}
 #navmenu ul li:last-child{border:none}
@@ -32,6 +32,7 @@ p{color:#555;line-height:18px}
 #hottitle ul li:last-child{border-right:none}
 #hottitle ul li.active{border-bottom:none}
 #hottitle ul li a{text-decoration:none;font-size:14px;color:#98246F;font-weight:normal;background:url(../images/icons-tv.png) no-repeat 0px 50%;padding-left:20px;width:12px}
+#hottitle ul li a.search{background:url(../images/search-icon-small.gif) no-repeat 0px 50%;}
 #hotcontent{margin-top:10px}
 #haleft{width:140px;float:left;margin-right:10px;padding:10px 0px;}
 #hamidd{width:520px;float:left;margin-right:10px;padding-left:10px}
@@ -62,6 +63,31 @@ p{color:#555;line-height:18px}
 .cls{clear:left}.clr{clear:right}
 .threcls{width:300px;height:auto;float:left;margin-right:20px;}
 div.threcls:last-child{margin:0px}
+.weather-icon{width:90px;height:70px;float:left;background:url(../images/bg_weather.png);margin-right:7px;margin-left:-7px}
+.weather-temp{width:100px;float:left;padding-top:10px}
+.weather .location{float:left;margin-top:2px;font-size:13px;font-weight:bold;}
+.weather .w2{background-position:0 -70px;}
+.weather .w3{background-position:0 -140px;}
+.weather .w4{background-position:0 -210px;}
+.weather .w5{background-position:0 -280px;}
+.weather .w6{background-position:0 -350px;}
+.weather .w7{background-position:0 -420px;}
+.weather .w8{background-position:0 -490px;}
+.weather .w9{background-position:0 -560px;}
+.weather .w10{background-position:-90px 0;}
+.weather .w11{background-position:-90px -70px;}
+.weather .w12{background-position:-90px -140px;}
+.weather .w13{background-position:-90px -210px;}
+.weather .w14{background-position:-90px -280px;}
+.weather .w15{background-position:-90px -350px;}
+.weather .w16{background-position:-90px -420px;}
+.weather .w17{background-position:-90px -490px;}
+.weather .w18{background-position:-90px -560px;}
+.temps{position: relative;float: left;width: 40px;padding: 30px 10px 0 0;color: #9aa5ac;text-transform: uppercase;font-size: 11px}
+.temps em{position: absolute;top: 0;left: -3px;font: 28px Arial,Helvetica,sans-serif;text-transform: normal;color: #788893;font-weight:bold}
+.weather-wind{width:120px;float:left;padding-top:25px}
+.weather-wind p{font-size: 11px; color:#788893;margin-bottom:1px;line-height: normal}
+.weather-wind p a{color: #db4300;font-size: 11px;}
 .topcate{border-top:2px solid #007cc3}
 .hotnews{width:100%;border-bottom:1px dotted #CCC;margin-bottom:5px}
 .hotnewsl{width:70px;height:auto;float:left;margin-right:7px}
@@ -93,7 +119,7 @@ box-shadow:0px 4px 2px #F4F4F4 inset;}
 .haborfour .hadabs{background-color:rgba(152,36,111,0.8) !important}
 /*.heath h2{color:#008C87 !important}*/
 .hacolums{width:300px;float:left;margin-right:20px;}
-.hacolums h3.hah3 a{display:block;font-size:13px;color:#008C87 !important}
+.hacolums h3.hah3 a{display:block;font-size:13px;color:#008C87 !important;font-weight:normal}
 .hacolums img{margin-bottom:7px}
 .haboxs .last{margin:0px}
 .hauthor{margin-top:10px;font-size:11px}

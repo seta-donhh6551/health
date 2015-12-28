@@ -17,7 +17,7 @@
 			$this->db->where("cate_id",$cateid);
 			return $this->db->get($this->_category)->row_array();
 		}
-		public function getcates($cateid,$limit){
+		public function getcates($cateid, $limit){
 			$this->db->join($this->_category,"tbl_category.cate_id = tbl_categorie.cate_id");
 			$this->db->where("tbl_categorie.cate_id",$cateid);
 			$this->db->where("tbl_categorie.type",1);

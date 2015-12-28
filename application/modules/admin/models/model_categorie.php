@@ -6,14 +6,14 @@
 			$this->load->database();
 		}
 		public function listall($off,$start){
-			$this->db->join("tbl_category","tbl_category.cate_id = tbl_categorie.cate_id");
-			$this->db->order_by("tbl_categorie.cate_id","desc");
+			$this->db->join("tbl_category","tbl_category.cate_id = tbl_categorie.cate_id", "left");
+			$this->db->order_by("tbl_categorie.cate_id", "desc");
 			$this->db->order_by("tbl_categorie.order","ASC");
 			$this->db->limit($off,$start);
 			return $this->db->get($this->_table)->result_array();
 		}
 		public function count_all(){
-			$this->db->join("tbl_category","tbl_category.cate_id = tbl_categorie.cate_id");
+			$this->db->join("tbl_category","tbl_category.cate_id = tbl_categorie.cate_id", "left");
 			return $this->db->count_all_results($this->_table);
 		}
 		public function add($data){

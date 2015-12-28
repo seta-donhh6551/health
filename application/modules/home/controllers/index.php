@@ -13,7 +13,7 @@ class Index extends MY_Controller
 		$data['listcate'] = $this->listcate();
 		$data['config'] = $this->config();
 		$data['newest'] = $this->new_posts(4);
-		$data['rancates'] = $this->model_home->rancates(5);
+		$data['rancates'] = $this->model_home->getcates(4, 6);
 		$data['cateone'] = $this->model_home->cateInfo(4);
 		$data['listone'] = $this->model_home->getquest(4, 4);
 		$data['menuone'] = $this->model_home->getcates(7, 4);
@@ -21,10 +21,10 @@ class Index extends MY_Controller
 		$data['listtwo'] = $this->model_home->getquest(6, 7);
 		$data['menutwo'] = $this->model_home->getcates(6, 5);
 		$data['typestwo'] = $this->model_home->gettypes(3, 12);
-		//$this->utility->debug($data['catetwo']);
+		//$this->utility->debug($data['cateone']);
 		$data['catethree'] = $this->model_home->cateInfo(3);
 		$data['listthree'] = $this->model_home->getquest(3, 3);
-		$data['menuthree'] = $this->model_home->getcates(3, 10);
+		$data['menuthree'] = $this->model_home->getcates(3, 7);
 		$data['catefour'] = $this->model_home->cateInfo(1);
 		$data['listfour'] = $this->model_home->getquest(1, 4);
 		$data['menufour'] = $this->model_home->getcates(1, 6);
