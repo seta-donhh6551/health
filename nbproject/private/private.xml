@@ -2,6 +2,14 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/xampp/htdocs/health/application/modules/home/models/model_home.php</file>
+            <file>file:/C:/xampp/htdocs/health/application/modules/home/views/content.php</file>
+            <file>file:/C:/xampp/htdocs/health/application/modules/home/controllers/index.php</file>
+            <file>file:/C:/xampp/htdocs/health/application/modules/admin/models/model_categorie.php</file>
+            <file>file:/C:/xampp/htdocs/health/application/modules/home/views/header.php</file>
+            <file>file:/C:/xampp/htdocs/health/application/modules/admin/controllers/categorie.php</file>
+            <file>file:/C:/xampp/htdocs/health/public/styles/style.css</file>
+        </group>
     </open-files>
 </project-private>
