@@ -13,28 +13,25 @@
 					<!--[if !IE]>start section content<![endif]-->
 					<div class="section_content">
 						<span class="section_content_top"></span>
-						
+
 						<div class="section_content_inner">
 							<div class="welcome_left">
                             	Before that, May 2/2012, two fishermen in Binh Minh District (Vinh Long) go fishing on the Hau River, near Ninh Kieu wharf (Can Tho) to catch fish on the banks dragon 1.5 m long and weighs 50 kg. Strange fish found beaten to death and they brought the fishing village (Can Tho) sold. The fish have silvery scales like dragon scales, small head, round body rare to see, who was afraid of "bad luck" should not dare to buy.
 
-Seeing this, two fishermen brought the fish to a nearby temple buried by people. The next morning, a large number of people flocked to the shrine to see the strange fish. Many people recognize that this is a dragon budget "crisis" of commonly kept aquarium fish bring feng shui luck. Some aquarium owners or believe but are also looking to buy empty handed because the fish has been beaten to death before.
-Many people recognize that this is a dragon budget "crisis" of commonly kept aquarium fish bring feng shui luck. Some aquarium owners or believe but are also looking to buy empty handed because the fish has been beaten to death before.
+Seeing this, two fishermen brought the fish to a nearby temple buried by people. The next morning, a large number of people flocked to the shrine to see the strange fish.
                             </div>
                             <div class="welcome_right">
                             	<img src="<?php echo base_url(); ?>public/admin/images/art-for-kids.jpg" width="150" style="padding:2px;border:1px solid #CCC;" />
                             </div>
                             <div class="cls" style="padding:5px;border-bottom:1px dashed #CCC;"></div>
-                            <div class="support"> 
+                            <div class="support">
                             	<div class="support_title">
                                 	<h2 class="menu_title">Support Infomartion</h2>
                                 </div>
                                 <div class="infomartion">
-                                	<p>Full name : Ha Huu Don</p>
+                                	<p>Full name : Local Host</p>
                                     <p>Phone number : 0974136509</p>
                                     <p>Email : haanhdon@gmail.com</p>
-                                    <p>Yahoo : northstar189</p>
-                                    <p>Skype : northstarvn</p>
                                 </div>
                             </div>
 						</div>

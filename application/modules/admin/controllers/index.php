@@ -6,7 +6,7 @@
 			$this->load->helper("url");
 		}
 		public function index(){
-			$data['title'] = "Kids Idea";
+			$data['title'] = "Life Respect";
 			$data['template'] = "home";
 			$data['data'] = "";
 			$data['act'] = 0;

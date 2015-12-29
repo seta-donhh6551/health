@@ -17,7 +17,7 @@
 			$config['next_link'] = "Next";
 			$config['prev_link'] = "Prev";
 			$this->load->library("pagination");
-			$this->pagination->initialize($config); 
+			$this->pagination->initialize($config);
 			$start = $this->uri->segment(4);
 			$data['data'] = "";
 			$data['act'] = 2;
@@ -28,7 +28,7 @@
 			$id   	= $this->uri->segment(4);
 			$status	= $this->uri->segment(5);
 			$db = array(
-				"cate_status" => $status 
+				"cate_status" => $status
 			);
 			$this->model_category->update_status($db,$id);
 			redirect(base_url()."admin/cate/");
@@ -43,14 +43,15 @@
 			if($this->input->post("ok") != ""){
 				$url = str_replace(' ', '-',strtolower($this->string->replace($this->input->post('cate_name'))));
 				$value = array(
-							"cate_name" => $this->input->post("cate_name"),
-							"cate_rewrite" => $url,
-							"cate_info" => $this->input->post("cate_info"),
-							"cate_ext" => $this->input->post("cate_ext"),
-							"cate_keys" => $this->input->post("cate_keys"),
-							"cate_description" => $this->input->post("cate_description"),
-							"cate_order" => $this->input->post("cate_order")
-						);
+					"cate_name" => $this->input->post("cate_name"),
+					"cate_title" => $this->input->post("cate_title"),
+					"cate_rewrite" => $url,
+					"cate_info" => $this->input->post("cate_info"),
+					"cate_ext" => $this->input->post("cate_ext"),
+					"cate_keys" => $this->input->post("cate_keys"),
+					"cate_description" => $this->input->post("cate_description"),
+					"cate_order" => $this->input->post("cate_order")
+				);
 				$check_cate = $this->model_category->checkcate($value['cate_name']);
 				if($check_cate == TRUE){
 					$data['error'] = "This category has been exits!";
@@ -94,14 +95,15 @@
 			if($this->input->post("ok") != ""){
 				$url = str_replace(' ', '-',strtolower($this->string->replace($this->input->post('cate_name'))));
 				$value = array(
-							"cate_name" => $this->input->post("cate_name"),
-							"cate_rewrite" => $url,
-							"cate_info" => $this->input->post("cate_info"),
-							"cate_keys" => $this->input->post("cate_keys"),
-							"cate_description" => $this->input->post("cate_description"),
-							"cate_ext" => $this->input->post("cate_ext"),
-							"cate_order" => $this->input->post("cate_order")
-						);
+					"cate_name" => $this->input->post("cate_name"),
+					"cate_title" => $this->input->post("cate_title"),
+					"cate_rewrite" => $url,
+					"cate_info" => $this->input->post("cate_info"),
+					"cate_keys" => $this->input->post("cate_keys"),
+					"cate_description" => $this->input->post("cate_description"),
+					"cate_ext" => $this->input->post("cate_ext"),
+					"cate_order" => $this->input->post("cate_order")
+				);
 				$check_cate = $this->model_category->check_cate($value['cate_name'],$id);
 				if($check_cate == TRUE){
 					$data['error'] = "This category has been exits!";
@@ -154,7 +156,7 @@
 			$config['thumb_marker'] = FALSE;
 			$config['width'] = 300;
 			$config['height'] = 200;
-			$this->image_lib->initialize($config); 
+			$this->image_lib->initialize($config);
 			$this->image_lib->resize();
 			$this->image_lib->clear();
 		}

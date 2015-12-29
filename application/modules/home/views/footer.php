@@ -1,12 +1,9 @@
 <div id="footer">
   <div id="footertop">
     <div class="footcols">
-      <h3>Science</h3>
+      <h3>Life Respect</h3>
       <ul>
-        <?php if(isset($menuone)){ ?>
-        <?php foreach($menuone as $science){ ?>
-          <li><a href="<?php echo base_url()."kid-".$science['cate_rewrite']."/".$science['rewrite']; ?>.html" title="<?php echo $science['name']; ?>"><?php echo $science['name']; ?></a></li>
-        <?php } } ?>
+          <li><a href="<?php echo base_url(); ?>about-us.html" title="About us">About us</a></li>
       </ul>
     </div>
     <div class="footcols">

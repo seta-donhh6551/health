@@ -27,7 +27,7 @@ $current_observation = $json_decode->current_observation;
 		</h1>
 	</div>
     <div id="headris">
-     <img src="<?php echo base_url();?>public/images/kid-activities.jpg" alt="kids activities"/>
+		<img src="<?php echo base_url();?>public/images/kid-activities.jpg" width="60" alt="kids activities"/>
     </div>
   </div>
   <div id="menu">
