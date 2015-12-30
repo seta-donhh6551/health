@@ -5,17 +5,15 @@
 		   $this->load->model("model_category");
 		   $this->load->model("model_home");
 	   }
-	   public function index(){	
+	   public function index(){
 	   	  $item = $this->uri->segment(1);
 		  $data['category'] = $this->model_category->getdata($item);
 		  $data['links'] = base_url().uri_string().".html";
 		  $data['config'] 	= $this->config();
 		  $data['newest'] = $this->new_posts(4);
 		  if($data['category'] == NULL){ redirect(base_url());}
-		  //$this->debug($this->new_posts());
 		  $data['listcago'] = $this->model_category->getcago($data['category']['cate_id'],0);
-		  $data['listtypes'] = $this->model_category->getcago($data['category']['cate_id'],1);
-		  //$this->debug($data['listtypes']);
+		  $data['listtypes'] = $this->model_home->getcates($data['category']['cate_id'], 6);
 		  $id = $data['category']['cate_id'];
 		  $config['base_url'] = base_url().$item;
 		  $config['total_rows'] = $this->model_category->count_all($id);
@@ -48,7 +46,7 @@
 		  $this->load->view("category/layout",$data);
 	   }
 	   public function categorie(){
-		  $item = $this->uri->segment(1); 
+		  $item = $this->uri->segment(1);
 		  $url = $this->uri->segment(2);
 		  $data['newest'] = $this->new_posts(4);
 		  $data['config'] 	= $this->config();
@@ -78,8 +76,8 @@
 		  $data['title'] = $data['categorie']['title'];
 		  $this->load->view("categories/layout",$data);
 	   }
-	   public function types(){	
-	   	  $item = $this->uri->segment(1); 
+	   public function types(){
+	   	  $item = $this->uri->segment(1);
 		  $url = $this->uri->segment(2);
 		  $data['newest'] = $this->new_posts(4);
 		  $data['config'] 	= $this->config();

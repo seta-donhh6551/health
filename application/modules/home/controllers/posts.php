@@ -5,11 +5,11 @@
 		   $this->load->helper("url");
 		   $this->load->model("model_posts");
 		   $this->load->model("model_home");
-		   $this->load->model("model_category");		   
+		   $this->load->model("model_category");
 	   }
 	   public function view(){
 		   $item = $this->uri->segment(1);
-		   $id1 = $this->fillter($this->uri->segment(2));
+		   $id1 = $this->utility->fillter($this->uri->segment(2));
 		   $category = $this->model_category->getdata($item);
 		   if($category == NULL){ redirect(base_url());}
 		   $data['listcago'] = $this->model_category->getcago($category['cate_id'],0);

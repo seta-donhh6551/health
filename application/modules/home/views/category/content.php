@@ -4,7 +4,7 @@
     <ul>
     <?php if(isset($listcago)){ ?>
     <?php $i=1; foreach($listcago as $menu){ ?>
-    <li><a href="<?php echo base_url()."kid-".$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
+    <li><a href="<?php echo base_url().$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
     <?php if($i == 4){ break;} $i++; } } ?>
     </ul>
   </div>
@@ -16,8 +16,8 @@
       	<div class="listtypes">
         	<?php $length = strlen($types['name']); ?>
         	<?php $name = str_replace("kids-","",$types['cate_rewrite']); ?>
-        	<a href="<?php echo base_url().$name."-for-kids/".$types['rewrite']; ?>.html"><img src="<?php echo base_url()."uploads/cate/thumb/".$types['image']; ?>" alt="<?php echo $types['name']; ?>" title="<?php echo $types['name']; ?>" /></a>
-            <h3 <?php if($length < 10){ echo "style='padding-left:10px'";}?>><a href="<?php echo base_url().$name."-for-kids/".$types['rewrite']; ?>.html"><?php echo $types['name']; ?></a></h3>
+        	<a href="<?php echo base_url().$name."/".$types['rewrite']; ?>.html"><img src="<?php echo base_url()."uploads/cate/thumb/".$types['image']; ?>" alt="<?php echo $types['name']; ?>" title="<?php echo $types['name']; ?>" /></a>
+            <h3 <?php if($length < 10){ echo "style='padding-left:10px'";}?>><a href="<?php echo base_url().$name."/".$types['rewrite']; ?>.html"><?php echo $types['name']; ?></a></h3>
         </div>
       <?php } } ?>
     </div>
@@ -27,9 +27,9 @@
         <h2><a href="<?php echo base_url().$category['cate_rewrite']; ?>.html"><?php echo $category['cate_name']; ?></a></h2>
         <p><?php echo $category['cate_info']; ?></p>
       </div>
-    </div>    
+    </div>
     <div class="catehot" style="margin-right:0px">
-      <!--h3> 
+      <!--h3>
       	<img src="<?php echo base_url();?>public/images/star-icon.png" alt="" />
         <img src="<?php echo base_url();?>public/images/star-icon.png" alt="" />
         <img src="<?php echo base_url();?>public/images/star-icon.png" alt="" />
@@ -40,7 +40,7 @@
       <ul>
       	<?php if(isset($related)){ ?>
 		<?php foreach($related as $items){ ?>
-		<li><a href="<?php echo base_url()."kid-".$items['cate_rewrite']."/".$items['post_title_rewrite']."-".$items['post_id']; ?>.html"><?php echo $items['post_title']; ?></a></li>
+		<li><a href="<?php echo base_url().$items['cate_rewrite']."/".$items['post_title_rewrite']."-".$items['post_id']; ?>.html"><?php echo $items['post_title']; ?></a></li>
 		<?php } } ?>
       </ul>
     </div>
@@ -52,7 +52,7 @@
       <ul>
 	    <?php if(isset($listcago)){ ?>
 	    <?php foreach($listcago as $menu){ ?>
-	    <li><a href="<?php echo base_url()."kid-".$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
+	    <li><a href="<?php echo base_url().$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
 	    <?php } } ?>
 	  </ul>
       <div style="margin:10px 0px;border-bottom:1px solid #CCC"></div>
@@ -66,9 +66,9 @@
     </div>
     <div id="hamidd" class="topcate">
       <div id="homelink">
-      	<a href="<?php echo base_url(); ?>">Home</a> &raquo; 
+      	<a href="<?php echo base_url(); ?>">Home</a> &raquo;
         <?php $catename = ucfirst(strtolower($category['cate_name'])); ?>
-        <a href="<?php echo base_url().$category['cate_rewrite']; ?>.html" title="<?php echo $catename; ?>"><?php echo $catename; ?></a> 
+        <a href="<?php echo base_url().$category['cate_rewrite']; ?>.html" title="<?php echo $catename; ?>"><?php echo $catename; ?></a>
       </div>
       <div id="listnews">
         <?php if(isset($results)){ ?>
@@ -91,7 +91,7 @@
       <div id="hotright">
         <div id="hottitle">
           <ul>
-            <li class="active"><a href="javascript:void(0)">Search</a></li>
+			  <li class="active"><a href="javascript:void(0)" class="search">Search</a></li>
           </ul>
         </div>
         <div class="cls"></div>
@@ -110,19 +110,10 @@
         </div>
       </div>
      <div id="adsone">
-      <!--img src="<?php echo base_url(); ?>public/images/adsense-300x250.gif" width="250" alt="" /-->
+      <img src="<?php echo base_url(); ?>public/images/adsense-300x250.gif" width="250" alt="" />
      </div>
      <div id="adstwo">
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- adsense 250x250 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:250px;height:250px"
-     data-ad-client="ca-pub-3757150389090146"
-     data-ad-slot="7088794911"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-      <!--img src="<?php echo base_url(); ?>public/images/adstwo.gif" width="250" alt="" /-->
+      <img src="<?php echo base_url(); ?>public/images/adstwo.gif" width="250" alt="" />
      </div>
     </div>
     <div class="cls"></div>

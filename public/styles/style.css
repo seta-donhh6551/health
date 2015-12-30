@@ -20,7 +20,7 @@ p{color:#555;line-height:18px}
 #menumid ul li:last-child{border:none}
 #content{width:940px;height:auto;margin:0px auto;margin-bottom:40px}
 #navmenu{height:17px;padding:10px 7px 10px 0px;border-bottom:1px solid #C8CED1;background-image:linear-gradient(#FFF, #F5F5F5 98%, #FFF 100%);}
-#navmenu h2{font-size:15px;float:left;text-transform:uppercase;color:#555;}
+#navmenu h2{font-size:15px;float:left;text-transform:uppercase;color:#5d9731;}
 #navmenu ul{float:right}
 #navmenu ul li{display:inline;margin-right:6px;padding-right:6px;border-right:1px solid #7FBDE1;color:#555}
 #navmenu ul li:last-child{border:none}
@@ -112,6 +112,7 @@ box-shadow:0px 4px 2px #F4F4F4 inset;}
 .habortwo{border-color:#CD4727 !important}
 .haborone h2{color:#008C87 !important}
 .habortwo h2{color:#CD4727 !important}
+#heghlights .hadabs{background-color:rgba(93,151,49,0.8) !important}
 .habortwo .hadabs{background-color:rgba(205,71,39,0.7) !important}
 .habortwo .haright span.author{color:#CD4727}
 .haborfour{border-color:#98246F !important}
@@ -157,9 +158,9 @@ box-shadow:0px 4px 2px #F4F4F4 inset;}
 .haborone .listright h3 a{color:#008C87 !important}
 .listright h3 a{font-size:13px;color:#98246F;font-weight:normal}
 .listright h3 a:hover{text-decoration:underline}
-.listtypes{width:100px;float:left;margin-bottom:15px}
-.listtypes img{max-width:70px;height:50px}
-.listtypes h3 a{font-size:12px}
+.listtypes{width:100px;float:left;margin-bottom:15px;}
+.listtypes img{max-width:60px;height:45px}
+.listtypes h3 a{font-size:12px;font-weight:normal;}
 .listtypes h3 a:hover{color:#09F}
 .hacolums .listtypes h3 a{color:#CD4727 !important}
 .relative{position:relative;padding-top:12px}

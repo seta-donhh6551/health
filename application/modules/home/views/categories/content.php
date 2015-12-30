@@ -4,17 +4,17 @@
     <ul>
     <?php if(isset($listcago)){ ?>
     <?php foreach($listcago as $menu){ ?>
-    <li><a href="<?php echo base_url()."kid-".$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
+    <li><a href="<?php echo base_url().$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
     <?php } } ?>
     </ul>
-  </div>  
+  </div>
   <div id="category">
     <div id="haleft">
       <h2>All category</h2>
       <ul>
 	    <?php if(isset($listcago)){ ?>
 	    <?php foreach($listcago as $menu){ ?>
-	    <li><a href="<?php echo base_url()."kid-".$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
+	    <li><a href="<?php echo base_url().$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
 	    <?php } } ?>
 	  </ul>
       <div style="margin:10px 0px;border-bottom:1px solid #CCC"></div>
@@ -28,10 +28,10 @@
     </div>
     <div id="hamidd">
       <div id="homelink">
-      	<a href="<?php echo base_url(); ?>">Home</a> &raquo; 
+      	<a href="<?php echo base_url(); ?>">Home</a> &raquo;
         <?php $catename = ucfirst(strtolower($categorie['cate_name'])); ?>
-        <a href="<?php echo base_url().$categorie['cate_rewrite']; ?>.html" title="<?php echo $catename; ?>"><?php echo $catename; ?></a> &raquo; 
-        <a href="<?php echo base_url().$categorie['cate_rewrite']."/".$categorie['rewrite']; ?>.html" title="<?php echo $categorie['name']; ?>"><?php echo $categorie['name']; ?></a> 
+        <a href="<?php echo base_url().$categorie['cate_rewrite']; ?>.html" title="<?php echo $catename; ?>"><?php echo $catename; ?></a> &raquo;
+        <a href="<?php echo base_url().$categorie['cate_rewrite']."/".$categorie['rewrite']; ?>.html" title="<?php echo $categorie['name']; ?>"><?php echo $categorie['name']; ?></a>
       </div>
       <div id="listnews">
         <?php if(isset($results)){ ?>
@@ -54,7 +54,7 @@
       <div id="hotright">
         <div id="hottitle">
           <ul>
-            <li class="active"><a href="#">Search</a></li>
+			  <li class="active"><a href="#" class="search">Search</a></li>
           </ul>
         </div>
         <div class="cls"></div>
@@ -68,24 +68,15 @@
             </div>
           </div>
           <div class="qucontent">
-            <p>Bắt đầu câu hỏi</p>
+            <p>Start new question</p>
           </div>
         </div>
       </div>
       <div id="adsone">
-      	<!--img src="<?php echo base_url(); ?>public/images/adsense-300x250.gif" width="250" alt="" /-->
+      	<img src="<?php echo base_url(); ?>public/images/adsense-300x250.gif" width="250" alt="" />
       </div>
       <div id="adstwo">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- adsense 250x250 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:250px;height:250px"
-     data-ad-client="ca-pub-3757150389090146"
-     data-ad-slot="7088794911"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-      	<!--img src="<?php echo base_url(); ?>public/images/adstwo.gif" width="250" alt="" /-->
+      	<img src="<?php echo base_url(); ?>public/images/adstwo.gif" width="250" alt="" />
       </div>
     </div>
     <div class="cls"></div>

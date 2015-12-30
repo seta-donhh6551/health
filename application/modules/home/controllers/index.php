@@ -21,13 +21,13 @@ class Index extends MY_Controller
 		$data['listtwo'] = $this->model_home->getquest(6, 7);
 		$data['menutwo'] = $this->model_home->getcates(6, 5);
 		$data['typestwo'] = $this->model_home->gettypes(3, 12);
-		//$this->utility->debug($data['cateone']);
 		$data['catethree'] = $this->model_home->cateInfo(3);
 		$data['listthree'] = $this->model_home->getquest(3, 3);
-		$data['menuthree'] = $this->model_home->getcates(3, 7);
-		$data['catefour'] = $this->model_home->cateInfo(1);
-		$data['listfour'] = $this->model_home->getquest(1, 4);
-		$data['menufour'] = $this->model_home->getcates(1, 6);
+		$data['menuthree'] = $this->model_home->getcates(3, 12);
+		//$this->utility->debug($data['menuthree']);
+		$data['catefour'] = $this->model_home->cateInfo(5);
+		$data['listfour'] = $this->model_home->getquest(5, 4);
+		$data['menufour'] = $this->model_home->getcates(5, 6);
 		$data['catefive'] = $this->model_home->cateInfo(2);
 		$data['listfive'] = $this->model_home->getquest(2, 4);
 		$data['menufive'] = $this->model_home->getcates(2, 6);

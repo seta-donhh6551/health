@@ -39,16 +39,24 @@
 */
 $route['default_controller'] = "home/index";
 $route['404_override'] = 'home/notfound';
-$route['haanhdon'] = "admin/index";
 $route['([a-zA-Z0-9-_]+)'] = "home/category/index";
 $route['([a-zA-Z0-9-_]+)/(:num)'] = "home/category/index/(:num)";
 $route['([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)-(:num)'] = "home/posts/view";
-$route['kid-([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)'] = "home/category/categorie/";
-$route['kid-([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/(:num)'] = "home/category/categorie/(:num)";
-$route['([a-zA-Z0-9-_]+)-for-kids/([a-zA-Z0-9-_]+)'] = "home/category/types";
-$route['([a-zA-Z0-9-_]+)-for-kids/([a-zA-Z0-9-_]+)/(:num)'] = "home/category/types/(:num)";
+$route['([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)'] = "home/category/categorie/";
+$route['([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/(:num)'] = "home/category/categorie/(:num)";
+//$route['([a-zA-Z0-9-_]+)-for-kids/([a-zA-Z0-9-_]+)'] = "home/category/types";
+//$route['([a-zA-Z0-9-_]+)-for-kids/([a-zA-Z0-9-_]+)/(:num)'] = "home/category/types/(:num)";
 $route['search'] = "home/search";
 //$route['quiz-questions'] = "home/question/index";
+
+// admin
+$route['haanhdon'] = "admin/index";
+$route['admin/cate'] = "admin/cate";
+$route['admin/user'] = "admin/user";
+$route['admin/posts'] = "admin/posts";
+$route['admin/categorie'] = "admin/categorie";
+$route['admin/intro/index'] = "admin/intro/index";
+$route['admin/config'] = "admin/config";
 
 
 

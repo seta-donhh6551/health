@@ -1,16 +1,18 @@
 <?php
-$api = file_get_contents('http://api.wunderground.com/api/383adebf8701e1ad/conditions/q/ca/San_Francisco.json');
-$json_decode = json_decode($api);
-$current_observation = $json_decode->current_observation;
+//$api = file_get_contents('http://api.wunderground.com/api/383adebf8701e1ad/conditions/q/ca/San_Francisco.json');
+//$json_decode = json_decode($api);
+//$current_observation = $json_decode->current_observation;
 //$this->utility->debug($current_observation);
 ?>
+<!--p class="location"><?php //echo $current_observation->display_location->city; ?></p>
+<p class="temps temp-now">Now <em><?php //echo $current_observation->temp_c; ?>°</em></p-->
 <div id="topsite">
   <div id="header">
 	  <div id="weather" class="weather">
 		<div class="weather-icon w17"></div>
 		<div class="weather-temp">
-			<p class="location"><?php echo $current_observation->display_location->city; ?></p>
-			<p class="temps temp-now">Now <em><?php echo $current_observation->temp_c; ?>°</em></p>
+			<p class="location">San Francisco</p>
+			<p class="temps temp-now">Now <em>7.6°</em></p>
 		</div>
 		<div class="weather-wind">
 			<p class="forecast">Possible thunderstorm</p>

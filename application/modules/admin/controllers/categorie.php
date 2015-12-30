@@ -17,7 +17,7 @@ class Categorie extends Student{
 	  	$config['next_link'] = "Next";
 	  	$config['prev_link'] = "Prev";
 	  	$this->load->library("pagination");
-	  	$this->pagination->initialize($config); 
+	  	$this->pagination->initialize($config);
 	  	$start = $this->uri->segment(4);
 	  	$data['data'] = "";
 	  	$data['act'] = 3;
@@ -142,16 +142,15 @@ class Categorie extends Student{
 	}
 	public function createThumbnail($fileName){
 		$this->load->library('image_lib');
-		//$this->load->helper('thumbnail_helper');
 		$config['image_library'] = 'gd2';
 		$config['source_image'] = 'uploads/cate/'.$fileName;
 		$config['new_image'] = 'uploads/cate/thumb/'.$fileName;
 		$config['create_thumb'] = TRUE;
 		$config['maintain_ratio'] = TRUE;
 		$config['thumb_marker'] = FALSE;
-		$config['width'] = 90;
-		$config['height'] = 70;
-		$this->image_lib->initialize($config); 
+		$config['width'] = 63;
+		$config['height'] = 63;
+		$this->image_lib->initialize($config);
 		$this->image_lib->resize();
 		$this->image_lib->clear();
 	}

@@ -121,22 +121,23 @@
       <h2><?php echo $catethree['cate_name']; ?></h2>
       <ul>
       <?php if(isset($menuthree)){ ?>
-      <?php foreach($menuthree as $menu){ ?>
+      <?php $k=1;foreach($menuthree as $menu){ ?>
+		<?php if($k < 7){ ?>
         <li><a href="<?php echo base_url().$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
-      <?php } } ?>
+		<?php } ++$k;} } ?>
       </ul>
     </div>
     <div class="haboxcontent">
       <div class="hacolums">
       <!-- List types -->
-      <?php if(isset($typestwo)){ ?>
-      <?php $i=1;foreach($typestwo as $types){ ?>
+      <?php if(isset($menuthree)){ ?>
+      <?php $i=1;foreach($menuthree as $types){ ?>
         <?php if($i <= 6){ ?>
       	<div class="listtypes" style="margin:10px 0px 35px 0px">
         	<?php $length = strlen($types['name']); ?>
         	<?php $name = str_replace("kids-","",$types['cate_rewrite']); ?>
-        	<a href="<?php echo base_url().$name."-for-kids/".$types['rewrite']; ?>.html"><img src="<?php echo base_url()."uploads/cate/thumb/".$types['image']; ?>" alt="<?php echo $types['name']; ?>" title="<?php echo $types['name']; ?>" /></a>
-            <h3 <?php if($length < 10){ echo "style='padding-left:10px'";}?>><a href="<?php echo base_url().$name."-for-kids/".$types['rewrite']; ?>.html"><?php echo $types['name']; ?></a></h3>
+        	<a href="<?php echo base_url().$name."/".$types['rewrite']; ?>.html"><img src="<?php echo base_url()."uploads/cate/thumb/".$types['image']; ?>" alt="<?php echo $types['name']; ?>" title="<?php echo $types['name']; ?>" /></a>
+            <h3 <?php if($length < 10){ echo "style='padding-left:10px'";}?>><a href="<?php echo base_url().$name."/".$types['rewrite']; ?>.html"><?php echo $types['name']; ?></a></h3>
         </div>
         <?php } ?>
       <?php $i++;} } ?>
@@ -152,14 +153,14 @@
       </div>
       <div class="hacolums last">
        <!-- List types -->
-      <?php if(isset($typestwo)){ ?>
-      <?php $j=1;foreach($typestwo as $types){ ?>
+      <?php if(isset($menuthree)){ ?>
+      <?php $j=1;foreach($menuthree as $types){ ?>
       	<?php if($j > 6){ ?>
       	<div class="listtypes" style="margin:10px 0px 35px 0px">
         	<?php $length = strlen($types['name']); ?>
         	<?php $name = str_replace("kids-","",$types['cate_rewrite']); ?>
-        	<a href="<?php echo base_url().$name.$types['rewrite']; ?>.html"><img src="<?php echo base_url()."uploads/cate/thumb/".$types['image']; ?>" alt="<?php echo $types['name']; ?>" title="<?php echo $types['name']; ?>" /></a>
-            <h3 <?php if($length < 10){ echo "style='padding-left:10px'";}?>><a href="<?php echo base_url().$name."-for-kids/".$types['rewrite']; ?>.html"><?php echo $types['name']; ?></a></h3>
+        	<a href="<?php echo base_url().$name.'/'.$types['rewrite']; ?>.html"><img src="<?php echo base_url()."uploads/cate/thumb/".$types['image']; ?>" alt="<?php echo $types['name']; ?>" title="<?php echo $types['name']; ?>" /></a>
+            <h3 <?php if($length < 10){ echo "style='padding-left:10px'";}?>><a href="<?php echo base_url().$name."/".$types['rewrite']; ?>.html"><?php echo $types['name']; ?></a></h3>
         </div>
         <?php } ?>
       <?php $j++;} } ?>
@@ -174,7 +175,7 @@
       <div class="cls"></div>
     </div>
   </div>
-  <div class="haboxs haborone">
+  <div class="haboxs haborone" style="margin:0px">
     <div class="heath haboxtitle">
       <h2><?php echo $catefour['cate_name']; ?></h2>
       <ul>
