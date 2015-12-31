@@ -10,14 +10,15 @@
   </div>
   <div id="category">
     <div id="haleft">
+	  <?php if(isset($listcago) && $listcago != null){ ?>
       <h2>All category</h2>
       <ul>
-	    <?php if(isset($listcago)){ ?>
 	    <?php foreach($listcago as $menu){ ?>
 	    <li><a href="<?php echo base_url().$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
-	    <?php } } ?>
+	    <?php } ?>
 	  </ul>
       <div style="margin:10px 0px;border-bottom:1px solid #CCC"></div>
+	  <?php } ?>
       <h2>Hot news</h2>
       <?php if(isset($newest)){ ?>
       <?php foreach($newest as $news){ ?>

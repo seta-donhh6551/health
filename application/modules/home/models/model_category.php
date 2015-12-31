@@ -18,8 +18,8 @@
 		}
 		public function searchs($keyword){
 			$this->db->join("tbl_category","tbl_category.cate_id = tbl_posts.cate_id");
-			$this->db->like('post_title',$keyword); 
-			$this->db->limit(6); 
+			$this->db->like('post_title',$keyword);
+			$this->db->limit(6);
 			return $this->db->get($this->_table)->result_array();
 		}
 		public function relatedtypes($cateid,$id){
@@ -39,7 +39,7 @@
 			$this->db->where("tbl_categorie.cate_id",$cateid);
 			$this->db->where("tbl_categorie.type !=",$type);
 			$this->db->order_by("order","asc");
-			$this->db->limit(6); 
+			$this->db->limit(6);
 			return $this->db->get($this->_categori)->result_array();
 		}
 		public function randomcago($limit){
@@ -82,9 +82,10 @@
 			$this->db->limit($off,$start);
 			return $this->db->get($this->_table)->result_array();
 		}
-		public function listcago($id){
-			$this->db->join("tbl_category","tbl_category.cate_id = tbl_categorie.cate_id");
-			$this->db->where("id !=",$id);
+		public function listcago($id, $cate_id){
+			$this->db->join("tbl_category","tbl_category.cate_id = tbl_categorie.cate_id", 'left');
+			$this->db->where('tbl_categorie.cate_id', $cate_id);
+			$this->db->where("tbl_categorie.id !=",$id);
 			$this->db->limit(4);
 			return $this->db->get($this->_categori)->result_array();
 		}

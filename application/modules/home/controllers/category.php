@@ -27,11 +27,6 @@
 		  $start = (int)$this->uri->segment(2);
 		  $data['listcate'] = $this->listcate();
 		  $data['results'] = $this->model_category->list_all($id,$config['per_page'],$start);
-		  /*foreach($results as $k => $total){
-			  $results[$k]['total'] = $this->model_category->getcoments($total['id']);
-		  }
-		  $data['results'] = $results;*/
-		  //$this->debug($data['results']);
 		  $data['link']     = $item;
 		  $data['eq'] 		= "10";
 		  $data['topeq'] 	= "0";
@@ -51,7 +46,6 @@
 		  $data['newest'] = $this->new_posts(4);
 		  $data['config'] 	= $this->config();
 		  $data['categorie'] = $this->model_category->getmenu($url);
-		  //$this->debug($data['categorie']);
 		  if($data['categorie'] == NULL){ redirect(base_url());}
 		  $id = $data['categorie']['id'];
 		  $config['base_url'] = base_url().$item."/".$url;
@@ -65,9 +59,8 @@
 		  $this->load->library("pagination",$config);
 		  $start = (int)$this->uri->segment(3);
 		  $data['listcate'] = $this->listcate();
-		  $data['listcago'] = $this->model_category->listcago($id);
+		  $data['listcago'] = $this->model_category->listcago($id, $data['categorie']['cate_id']);
 		  $data['results'] = $this->model_category->list_all_cago($id,$config['per_page'],$start);
-		  //$this->debug($data['results']);
 		  $data['menuone'] = $this->model_home->getcates(7,4);
 		  $data['menutwo'] = $this->model_home->getcates(6,5);
 		  $data['menuthree'] = $this->model_home->getcates(3,10);
