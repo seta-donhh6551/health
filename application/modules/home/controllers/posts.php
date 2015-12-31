@@ -22,9 +22,9 @@
 		   $data['result'] = $this->model_posts->getdata($id);
 		   if($data['result'] == NULL){ redirect(base_url()); exit();}
 		   $data['menuone'] = $this->model_home->getcates(7,4);
-		   $data['menutwo'] = $this->model_home->getcates(3,5);
-		   $data['menuthree'] = $this->model_home->getcates(9,10);
-		   $data['menufour'] = $this->model_home->getcates(8,6);
+		   $data['menutwo'] = $this->model_home->getcates(6,5);
+		   $data['menuthree'] = $this->model_home->getcates(3,10);
+		   $data['menufour'] = $this->model_home->getcates(5,6);
 		   $data['title']  = $data['result']['post_title'];
 		   $this->load->view("posts/layout",$data);
 	   }

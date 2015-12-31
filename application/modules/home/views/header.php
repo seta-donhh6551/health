@@ -24,12 +24,11 @@
     <!-- <img src="<?php echo base_url();?>public/images/468x60-2.gif" alt="" style="float:right"/> -->
     <div id="midhead">
 		<h1>
-			<a href="<?php echo base_url(); ?>" title="The Sydney Morning Herald" class="logo">The Sydney Morning Herald</a>
-			<a href="<?php echo base_url(); ?>" title="Independent. Always." class="sublogo" target="_blank"></a>
+			<a href="<?php echo base_url(); ?>" title="Stay Strong Live Green" class="logo">Stay Strong Live Green</a>
 		</h1>
 	</div>
     <div id="headris">
-		<img src="<?php echo base_url();?>public/images/kid-activities.jpg" width="60" alt="kids activities"/>
+		<img src="<?php echo base_url();?>public/images/kid-activities.jpg" width="50" alt="Purity life"/>
     </div>
   </div>
   <div id="menu">

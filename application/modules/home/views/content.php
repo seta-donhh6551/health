@@ -35,7 +35,7 @@
       <div id="hottitle">
           <ul>
             <li class="active"><a href="javascript:void(0)" class="search">Search</a></li>
-            <li><a href="javascript:void(0)">Top video</a></li>
+            <li><a href="javascript:void(0)">Video</a></li>
           </ul>
         </div>
         <div class="cls"></div>

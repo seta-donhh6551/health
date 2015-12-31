@@ -4,22 +4,28 @@
       <h3>Life Respect</h3>
       <ul>
           <li><a href="<?php echo base_url(); ?>about-us.html" title="About us">About us</a></li>
+		  <li><a href="<?php echo base_url(); ?>privacy-policy.html" title="About us">Privacy Policy</a></li>
       </ul>
     </div>
     <div class="footcols">
       <h3>Dermatology</h3>
       <ul>
-        <?php if(isset($menutwo)){ ?>
-        <?php foreach($menutwo as $quiz){ ?>
-          <li><a href="<?php echo base_url()."kid-".$quiz['cate_rewrite']."/".$quiz['rewrite']; ?>.html" title="<?php echo $quiz['name']; ?>"><?php echo $quiz['name']; ?></a></li>
+		  <li><a href="#">What is vitiligo?</a></li>
+		  <li><a href="#">What is acne?</a></li>
+        <?php if(isset($menuone)){ ?>
+        <?php foreach($menuone as $quiz){ ?>
+          <li><a href="<?php echo base_url().$quiz['cate_rewrite']."/".$quiz['rewrite']; ?>.html" title="<?php echo $quiz['name']; ?>"><?php echo $quiz['name']; ?></a></li>
         <?php } } ?>
       </ul>
     </div>
     <div class="footcols">
       <h3>Allergy</h3>
       <ul>
-        <li><a href="<?php echo base_url(); ?>kid-cool-math/maths-puzzles-for-kids.html" title="Maths puzzles for kids">Maths puzzles for kids</a></li>
-        <li><a href="<?php echo base_url(); ?>kid-cool-math/math-test.html" title="Math test">Math test</a></li>
+		<?php if(isset($menutwo)){ ?>
+        <?php foreach($menutwo as $quiz){ ?>
+          <li><a href="<?php echo base_url().$quiz['cate_rewrite']."/".$quiz['rewrite']; ?>.html" title="<?php echo $quiz['name']; ?>"><?php echo $quiz['name']; ?></a></li>
+        <?php } } ?>
+        <li><a href="<?php echo base_url(); ?>allergy/allergic-rhinitis.html" title="Allergic rhinitis">Allergic rhinitis</a></li>
       </ul>
     </div>
     <div class="footcols">
@@ -32,7 +38,7 @@
       </ul>
     </div>
     <div class="footcols flast">
-      <h3>Pediatrics</h3>
+      <h3>Surgery</h3>
       <ul>
         <?php if(isset($menufour)){ ?>
         <?php foreach($menufour as $cooking){ ?>

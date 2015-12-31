@@ -50,6 +50,7 @@ $route['search'] = "home/search";
 //$route['quiz-questions'] = "home/question/index";
 
 // admin
+$route['admin/index'] = "admin/index";
 $route['haanhdon'] = "admin/index";
 $route['admin/cate'] = "admin/cate";
 $route['admin/user'] = "admin/user";
@@ -57,6 +58,7 @@ $route['admin/posts'] = "admin/posts";
 $route['admin/categorie'] = "admin/categorie";
 $route['admin/intro/index'] = "admin/intro/index";
 $route['admin/config'] = "admin/config";
+$route['admin/verify'] = "admin/verify";
 
 
 

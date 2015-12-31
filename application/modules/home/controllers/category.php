@@ -36,9 +36,9 @@
 		  $data['eq'] 		= "10";
 		  $data['topeq'] 	= "0";
 		  $data['menuone'] = $this->model_home->getcates(7,4);
-		  $data['menutwo'] = $this->model_home->getcates(3,5);
-		  $data['menuthree'] = $this->model_home->getcates(9,10);
-		  $data['menufour'] = $this->model_home->getcates(8,6);
+		  $data['menutwo'] = $this->model_home->getcates(6,5);
+		  $data['menuthree'] = $this->model_home->getcates(3,10);
+		  $data['menufour'] = $this->model_home->getcates(5,6);
 		  $data['randompost'] = $this->randomquest(35);
 		  $data['related'] = $this->randomquest(65);
 		  $data['title'] 	= $data['category']['cate_info'];
@@ -69,9 +69,9 @@
 		  $data['results'] = $this->model_category->list_all_cago($id,$config['per_page'],$start);
 		  //$this->debug($data['results']);
 		  $data['menuone'] = $this->model_home->getcates(7,4);
-		  $data['menutwo'] = $this->model_home->getcates(3,5);
-		  $data['menuthree'] = $this->model_home->getcates(9,10);
-		  $data['menufour'] = $this->model_home->getcates(8,6);
+		  $data['menutwo'] = $this->model_home->getcates(6,5);
+		  $data['menuthree'] = $this->model_home->getcates(3,10);
+		  $data['menufour'] = $this->model_home->getcates(5,6);
 		  $data['randompost'] = $this->randomquest(35);
 		  $data['title'] = $data['categorie']['title'];
 		  $this->load->view("categories/layout",$data);
@@ -104,9 +104,9 @@
 		  $data['results'] = $this->model_category->list_types($id,$config['per_page'],$start);
 		  //$this->debug($data['relatedtypes']);
 		  $data['menuone'] = $this->model_home->getcates(7,4);
-		  $data['menutwo'] = $this->model_home->getcates(3,5);
-		  $data['menuthree'] = $this->model_home->getcates(9,10);
-		  $data['menufour'] = $this->model_home->getcates(8,6);
+		  $data['menutwo'] = $this->model_home->getcates(6,5);
+		  $data['menuthree'] = $this->model_home->getcates(3,10);
+		  $data['menufour'] = $this->model_home->getcates(5,6);
 		  $data['randompost'] = $this->randomquest(35);
 		  $data['title'] = $data['categorie']['title'];
 		  $this->load->view("types/layout",$data);

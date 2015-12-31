@@ -1,7 +1,7 @@
 <div id="hottitle">
   <ul>
     <li class="active"><a href="#">Search</a></li>
-    <li><a href="#">Top video</a></li>
+    <li><a href="#">Video</a></li>
   </ul>
 </div>
 <div class="cls"></div>
@@ -15,6 +15,6 @@
     </div>
   </div>
   <div class="qucontent">
-    <p>Bắt đầu câu hỏi</p>
+    <p>Start new question</p>
   </div>
 </div>
