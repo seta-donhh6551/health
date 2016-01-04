@@ -1,9 +1,4 @@
 <script type="text/javascript" src="<?php echo base_url();?>public/scripts/jquery-1.7.2.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$("#menu > ul > li > a").eq(<?php if(isset($eq)){ echo $eq;}else{ echo 0;} ?>).addClass("active");
-});
-</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
