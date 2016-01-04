@@ -8,7 +8,7 @@
     <?php } } ?>
     </ul>
   </div>
-  <div id="heghlights">
+	<div id="heghlights" class="mg-bot">
     <div class="threcls">
     <?php if(isset($listone)){ ?>
       <?php foreach($listone as $new){ ?>
@@ -60,6 +60,90 @@
     </div>
   </div>
   <div class="cls"></div>
+  <div class="haboxs mg-bot br-reset">
+	  <div class="surgery">
+		  <div class="haboxtitle">
+			  <h2>Anesthesia resuscitation</h2>
+			  <div class="dropdown-panel">
+				<button class="dropdown-panel-toggle generic-selector">
+					<span class="icon ddown">More</span>
+				</button>
+			  </div>
+		  </div>
+		  <div class="sur-content">
+			  <div class="hotquest mg-bot">
+				<h3><a href="#">How to make a paper boat</a></h3>
+				<div class="hadleft"> <img src="http://localhost/health/uploads/hanews/thumb/symptoms-of-vitiligo.jpg" alt="" height="66" width="86"> </div>
+				<div class="hadright">
+				  <p class="title">
+					  The paper boat is a folded boat able to swim - for a while. Obviously it is well known all over the ...			</p>
+				</div>
+				<div class="cls"></div>
+			  </div>
+			  <ul>
+				  <li><a href="#">Sydney's losing something special</a></li>
+				  <li><a href="#">Girl, 13, missing on family holiday</a></li>
+				  <li><a href="#">Family's fury over father's death</a></li>
+				  <li><a href="#">New Year's resolution as organisers back down</a></li>
+			  </ul>
+		  </div>
+	  </div>
+	  <div class="surgery">
+		  <div class="haboxtitle">
+			  <h2>Spine</h2>
+			  <div class="dropdown-panel">
+				<button class="dropdown-panel-toggle generic-selector">
+					<span class="icon ddown">More</span>
+				</button>
+			  </div>
+		  </div>
+		  <div class="sur-content">
+			  <div class="hotquest mg-bot">
+				<h3><a href="#">How to make a paper boat</a></h3>
+				<div class="hadleft"> <img src="http://localhost/health/uploads/hanews/thumb/symptoms-of-vitiligo.jpg" alt="" height="66" width="86"> </div>
+				<div class="hadright">
+				  <p class="title">
+					  The paper boat is a folded boat able to swim - for a while. Obviously it is well known all over the ...			</p>
+				</div>
+				<div class="cls"></div>
+			  </div>
+			  <ul>
+				  <li><a href="#">Sydney's losing something special</a></li>
+				  <li><a href="#">Girl, 13, missing on family holiday</a></li>
+				  <li><a href="#">Family's fury over father's death</a></li>
+				  <li><a href="#">New Year's resolution as organisers back down</a></li>
+			  </ul>
+		  </div>
+	  </div>
+	  <div class="surgery mg-reset">
+		  <div class="haboxtitle">
+			  <h2>Anatomy</h2>
+			  <div class="dropdown-panel">
+				<button class="dropdown-panel-toggle generic-selector">
+					<span class="icon ddown">More</span>
+				</button>
+			  </div>
+		  </div>
+		  <div class="sur-content">
+			  <div class="hotquest mg-bot">
+				<h3><a href="#">How to make a paper boat</a></h3>
+				<div class="hadleft"> <img src="http://localhost/health/uploads/hanews/thumb/symptoms-of-vitiligo.jpg" alt="" height="66" width="86"> </div>
+				<div class="hadright">
+				  <p class="title">
+					  The paper boat is a folded boat able to swim - for a while. Obviously it is well known all over the ...			</p>
+				</div>
+				<div class="cls"></div>
+			  </div>
+			  <ul>
+				  <li><a href="#">Sydney's losing something special</a></li>
+				  <li><a href="#">Girl, 13, missing on family holiday</a></li>
+				  <li><a href="#">Family's fury over father's death</a></li>
+				  <li><a href="#">New Year's resolution as organisers back down</a></li>
+			  </ul>
+		  </div>
+	  </div>
+	  <div class="cls"></div>
+  </div>
   <div class="haboxs haborone">
     <div class="heath haboxtitle">
       <h2><?php echo $catetwo['cate_name']; ?></h2>
@@ -175,7 +259,7 @@
       <div class="cls"></div>
     </div>
   </div>
-  <div class="haboxs haborone" style="margin:0px">
+  <div class="haboxs haborone mg-reset">
     <div class="heath haboxtitle">
       <h2><?php echo $catefour['cate_name']; ?></h2>
       <ul>

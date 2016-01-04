@@ -28,8 +28,8 @@
       <?php } } ?>
     </div>
     <div id="hamidd">
-      <div id="homelink"> 
-        <a href="<?php echo base_url(); ?>" title="Home">Home</a> &raquo; 
+      <div id="homelink">
+        <a href="<?php echo base_url(); ?>" title="Home">Home</a> &raquo;
         <?php $catename = ucfirst(strtolower($result['cate_name'])); ?>
         <a href="<?php echo base_url().$result['cate_rewrite']; ?>.html" title="<?php echo $catename; ?>"><?php echo $catename; ?></a> &raquo;
         <a href="<?php echo base_url().$result['cate_rewrite']."/".$result['post_title_rewrite']."-".$result['post_id']; ?>.html" title="<?php echo $result['post_title']; ?>"><?php echo $result['post_title']; ?></a>
@@ -38,18 +38,6 @@
         <?php if(isset($result)){ ?>
         <h1><?php echo $result['post_title']; ?></h1>
         <div class="deshinfo"><?php echo $result['post_shotinfo']; ?></div>
-        <div class='ads'>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- adsense auto size -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3757150389090146"
-     data-ad-slot="6111589312"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-        </div>
         <p class="deshinfo">by <span><?php echo $result['post_author']; ?></span> at <?php if($result['post_date'] != NULL){ echo $result['post_date'];}else{ echo "...";}; ?> | source <?php echo $result['post_source']; ?></p>
         <?php if($result['post_image'] != NULL){ ?>
         <img src="<?php echo base_url()."uploads/hanews/$result[post_image]"; ?>" class="deimg" alt="<?php echo $result['post_title']; ?>" title="<?php echo $result['post_title']; ?>" />
@@ -65,7 +53,7 @@
       <div id="hotright">
         <div id="hottitle">
           <ul>
-            <li class="active"><a href="#">Search</a></li>
+			  <li class="active"><a href="#" class="search">Search</a></li>
           </ul>
         </div>
         <div class="cls"></div>
@@ -79,24 +67,15 @@
             </div>
           </div>
           <div class="qucontent">
-            <p>Top video</p>
+            <p>Video</p>
           </div>
         </div>
       </div>
       <div id="adsone">
-      	<!--img src="<?php echo base_url(); ?>public/images/adsense-300x250.gif" width="250" alt="" /-->
+      	<img src="<?php echo base_url(); ?>public/images/adsense-300x250.gif" width="250" alt="" />
       </div>
       <div id="adstwo">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- adsense 250x250 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:250px;height:250px"
-     data-ad-client="ca-pub-3757150389090146"
-     data-ad-slot="7088794911"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-      	<!--img src="<?php echo base_url(); ?>public/images/adstwo.gif" width="250" alt="" /-->
+      	<img src="<?php echo base_url(); ?>public/images/adstwo.gif" width="250" alt="" />
       </div>
     </div>
     <div class="cls"></div>
