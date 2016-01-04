@@ -16,6 +16,7 @@
         <div class="hotnewsl"><a href="<?php echo base_url().$new['cate_rewrite']."/".$new['post_title_rewrite']."-".$new['post_id']; ?>.html"><img src="<?php echo base_url()."uploads/hanews/thumb/".$new['post_image']; ?>" alt="<?php echo $new['post_title']; ?>" title="<?php echo $new['post_title']; ?>" /></a> </div>
         <div class="hotnewsr">
           <h3><a href="<?php echo base_url().$new['cate_rewrite']."/".$new['post_title_rewrite']."-".$new['post_id']; ?>.html"><?php echo $new['post_title']; ?></a></h3>
+		  <?php //echo $new['post_shotinfo']; ?>
           <!--p class="hdauthor">by <span><?php echo $new['post_author']; ?></span> at <?php echo date('Y-m-d', strtotime($new['post_date'])); ?></p-->
         </div>
         <div class="cls"></div>
