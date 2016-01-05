@@ -17,7 +17,7 @@
         <div class="hotnewsr">
           <h3><a href="<?php echo base_url().$new['cate_rewrite']."/".$new['post_title_rewrite']."-".$new['post_id']; ?>.html"><?php echo $new['post_title']; ?></a></h3>
 		  <?php //echo $new['post_shotinfo']; ?>
-          <!--p class="hdauthor">by <span><?php echo $new['post_author']; ?></span> at <?php echo date('Y-m-d', strtotime($new['post_date'])); ?></p-->
+          <p class="hdauthor">by <span><?php echo $new['post_author']; ?></span> at <?php echo date('Y-m-d', strtotime($new['post_date'])); ?></p>
         </div>
         <div class="cls"></div>
       </div>

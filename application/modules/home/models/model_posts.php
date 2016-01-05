@@ -17,4 +17,11 @@
 			$this->db->where("cate_id",$id);
 			return $this->db->get($this->_category)->row_array();
 		}
+		public function getPostByCate($cateId, $limit = false){
+			$this->db->where("cate_id", $cateId);
+			if($limit){
+				$this->db->limit($limit);
+			}
+			return $this->db->get($this->_table)->result_array();
+		}
 	}

@@ -14,18 +14,18 @@
 		   if($category == NULL){ redirect(base_url());}
 		   $data['listcago'] = $this->model_category->getcago($category['cate_id'],0);
 		   $id = array_pop(explode('-', $id1));
-		   $data['config'] 		= $this->config();
-		   $data['newest'] 		= $this->new_posts(4);
+		   $data['config'] = $this->config();
+		   $data['related'] = $this->model_posts->getPostByCate($category['cate_id'], 5);
 		   $data['listcate'] = $this->listcate();
 		   $data['randompost'] = $this->randomquest(35);
-		   $data['falink']       = base_url().uri_string().".html";
+		   $data['falink'] = base_url().uri_string().".html";
 		   $data['result'] = $this->model_posts->getdata($id);
 		   if($data['result'] == NULL){ redirect(base_url()); exit();}
 		   $data['menuone'] = $this->model_home->getcates(7,4);
 		   $data['menutwo'] = $this->model_home->getcates(6,5);
 		   $data['menuthree'] = $this->model_home->getcates(3,10);
 		   $data['menufour'] = $this->model_home->getcates(5,6);
-		   $data['title']  = $data['result']['post_title'];
+		   $data['title'] = $data['result']['post_title'];
 		   $this->load->view("posts/layout",$data);
 	   }
    }

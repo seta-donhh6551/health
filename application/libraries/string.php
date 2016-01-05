@@ -1,4 +1,4 @@
-<?php if(!defined('BASEPATH'))exit('No direct script access allowed'); 
+<?php if(!defined('BASEPATH'))exit('No direct script access allowed');
 
 /*
  * Class string cat chuoi
@@ -11,16 +11,16 @@ class string{
 		if ($str=="" || $str == NULL || is_array($str) || strlen($str)==0)
 		return $str;
 		$str = trim($str);
-					
+
 		if (strlen($str) <= $limit) return $str;
 		$str = substr($str,0,$limit);
-		
-		if (!substr_count($str," ")) 
+
+		if (!substr_count($str," "))
 		{
 			if ($more) $str .= " ...";
 			return $str;
 		}
-		while(strlen($str) && ($str[strlen($str)-1] != " ")) 
+		while(strlen($str) && ($str[strlen($str)-1] != " "))
 		{
 			$str = substr($str,0,-1);
 		}
@@ -28,7 +28,7 @@ class string{
 		if ($more) $str .= " ...";
 			return $str;
 	}
-	
+
 	function replace($str) {
 		if(!$str) return false;
   	        $unicode = array(
@@ -48,17 +48,17 @@ class string{
   	            'y'=>array('ý','ỳ','ỷ','ỹ','ỵ'),
   	            'Y'=>array('Ý','Ỳ','Ỷ','Ỹ','Ỵ'),
 				'-'=>array(', ','. ',"'"),
-				'' =>array(',','.'),					
+				'' =>array(',','.','’','?'),
 				'-'=>array(' .',' ;','; ',' :',': '),
   	            '-'=>array(';',':'),
-				'-'=>array(' - '),	
+				'-'=>array(' - '),
   	        );
 
   	        foreach($unicode as $nonUnicode=>$uni){
   	        	foreach($uni as $value)
             	$str = str_replace($value,$nonUnicode,$str);
   	        }
-    	return $str;	
-	}	
+    	return $str;
+	}
 }
 ?>

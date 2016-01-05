@@ -19,8 +19,8 @@
 	    <?php } } ?>
 	  </ul>
       <div style="margin:10px 0px;border-bottom:1px solid #CCC"></div>
-      <?php if(isset($newest)){ ?>
-      <?php foreach($newest as $news){ ?>
+      <?php if(isset($related)){ ?>
+      <?php foreach($related as $news){ ?>
       <div class="newslf"> <a href="<?php echo $news['post_title_rewrite']."-".$news['post_id']; ?>.html"><img src="<?php echo base_url()."uploads/hanews/thumb/".$news['post_image']; ?>" alt="<?php echo $news['post_title']; ?>" title="<?php echo $news['post_title']; ?>" /></a>
         <h3><a href="<?php echo $news['post_title_rewrite']."-".$news['post_id']; ?>.html"><?php echo $news['post_title']; ?></a></h3>
         <p class="hdauthor"><span><?php echo $news['post_author']; ?></span>/<?php echo $news['post_date']; ?></p>
