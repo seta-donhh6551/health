@@ -232,14 +232,14 @@ ul.haquest li span{color:#CD4727;font-size:11px;font-weight:bold;margin-right:5p
 .dropdown-panel-toggle .icon.ddown {
     background-position: -104px 0;
 }
-.postinfo{padding:5px 0px;color:#555;line-height:17px}
-.defull{line-height:18px;color:#555;padding-top:10px}
+.postinfo{padding:5px 0px;color:#444;line-height:17px}
+.defull{line-height:18px;color:#444;padding-top:10px}
 .defull img{max-width:520px;margin:5px 0px}.deimg{width:500px;margin:7px 0px}
 .detailnews h1{font-size:22px;color:#333;font-weight:normal}
 .deshinfo{margin:15px 0px;}.deshinfo span,.deshinfo p{color:#333;font-size:14px;line-height:19px}
 .deinfo, .deinfo span,.deinfo p{color:#333;line-height:19px;margin:10px 0px}
 .defull span,.defull p{font-size:13px;line-height:19px;margin:5px 0px}
-.defull span{color:#333;}
+.defull span{color:#444;}
 .defull ol,.defull ul{padding-left:20px;list-style-type:disc}
 .defull h3{margin-bottom:3px}
 .defull h3 strong{color:#333}
