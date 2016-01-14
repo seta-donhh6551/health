@@ -3,12 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/health/application/modules/home/views/posts/content.php</file>
-            <file>file:/C:/xampp/htdocs/health/application/modules/home/views/content.php</file>
-            <file>file:/C:/xampp/htdocs/health/application/modules/home/models/model_posts.php</file>
-            <file>file:/C:/xampp/htdocs/health/application/libraries/string.php</file>
+            <file>file:/C:/xampp/htdocs/health/application/modules/home/views/scripts.php</file>
+            <file>file:/C:/xampp/htdocs/health/public/scripts/scroll.js</file>
+            <file>file:/C:/xampp/htdocs/health/application/modules/home/views/footer.php</file>
             <file>file:/C:/xampp/htdocs/health/public/styles/style.css</file>
-            <file>file:/C:/xampp/htdocs/health/application/modules/home/controllers/posts.php</file>
         </group>
     </open-files>
 </project-private>

@@ -24,7 +24,6 @@ class Index extends MY_Controller
 		$data['catethree'] = $this->model_home->cateInfo(3);
 		$data['listthree'] = $this->model_home->getquest(3, 3);
 		$data['menuthree'] = $this->model_home->getcates(3, 12);
-		//$this->utility->debug($data['menuthree']);
 		$data['catefour'] = $this->model_home->cateInfo(5);
 		$data['listfour'] = $this->model_home->getquest(5, 4);
 		$data['menufour'] = $this->model_home->getcates(5, 6);

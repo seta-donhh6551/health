@@ -1,4 +1,5 @@
 <script type="text/javascript" src="<?php echo base_url();?>public/scripts/first.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>public/scripts/articles.js"></script>
 <div id="content">
   <div id="navmenu">
     <h2><?php echo $result['cate_name']; ?></h2>
@@ -18,12 +19,19 @@
 	    <li><a href="<?php echo base_url()."kid-".$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
 	    <?php } } ?>
 	  </ul>
-      <div style="margin:10px 0px;border-bottom:1px solid #CCC"></div>
+	  <div class="line"></div>
+	  <div id="quick-view">
+		  <h3>IN THIS ARTICLE</h3>
+		  <ul>
+
+		  </ul>
+	  </div>
+      <div class="line"></div>
       <?php if(isset($related)){ ?>
       <?php foreach($related as $news){ ?>
       <div class="newslf"> <a href="<?php echo $news['post_title_rewrite']."-".$news['post_id']; ?>.html"><img src="<?php echo base_url()."uploads/hanews/thumb/".$news['post_image']; ?>" alt="<?php echo $news['post_title']; ?>" title="<?php echo $news['post_title']; ?>" /></a>
         <h3><a href="<?php echo $news['post_title_rewrite']."-".$news['post_id']; ?>.html"><?php echo $news['post_title']; ?></a></h3>
-        <p class="hdauthor"><span><?php echo $news['post_author']; ?></span>/<?php echo $news['post_date']; ?></p>
+        <p class="hdauthor"><span><?php echo $news['post_author']; ?></span>  <?php echo $news['post_date']; ?></p>
       </div>
       <?php } } ?>
     </div>

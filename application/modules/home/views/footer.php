@@ -56,3 +56,4 @@
     <a href="<?php echo base_url();?>"><img src="<?php echo base_url(); ?>public/images/logo.jpg" alt="Life respect is a website that give free advice on your health advice" width="250" style="opacity:0.3;position:absolute;right:0px;top:30px" /></a>
   </div>
 </div>
+<script type="text/javascript" src="<?php echo base_url(); ?>public/scripts/scroll.js"></script>
