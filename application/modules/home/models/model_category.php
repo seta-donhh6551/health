@@ -39,7 +39,7 @@
 			$this->db->where("tbl_categorie.cate_id",$cateid);
 			$this->db->where("tbl_categorie.type !=",$type);
 			$this->db->order_by("order","asc");
-			$this->db->limit(6);
+			$this->db->limit(4);
 			return $this->db->get($this->_categori)->result_array();
 		}
 		public function randomcago($limit){

@@ -16,6 +16,9 @@ class Index extends MY_Controller
 		$data['rancates'] = $this->model_home->getcates(4, 6);
 		$data['cateone'] = $this->model_home->cateInfo(4);
 		$data['listone'] = $this->model_home->getquest(4, 4);
+		//otorhinolaryngology
+		$data['otorhino'] = $this->model_home->getquest(7, 5);
+		//$this->utility->debug($data['otorhino']);
 		$data['menuone'] = $this->model_home->getcates(7, 4);
 		$data['catetwo'] = $this->model_home->cateInfo(6);
 		$data['listtwo'] = $this->model_home->getquest(6, 7);

@@ -64,7 +64,7 @@
   <div class="haboxs mg-bot br-reset">
 	  <div class="surgery">
 		  <div class="haboxtitle">
-			  <h2>Anesthesia resuscitation</h2>
+			  <h2>Otorhinolaryngology</h2>
 			  <div class="dropdown-panel">
 				<button class="dropdown-panel-toggle generic-selector">
 					<span class="icon ddown">More</span>
@@ -72,26 +72,31 @@
 			  </div>
 		  </div>
 		  <div class="sur-content">
+			  <?php if(isset($otorhino) && $otorhino){ ?>
 			  <div class="hotquest mg-bot">
-				<h3><a href="#">How to make a paper boat</a></h3>
-				<div class="hadleft"> <img src="http://localhost/health/uploads/hanews/thumb/symptoms-of-vitiligo.jpg" alt="" height="66" width="86"> </div>
+				  <h3><a href="<?php echo base_url().$otorhino[0]['cate_rewrite'].'/'.$otorhino[0]['post_title_rewrite'].'-'.$otorhino[0]['post_id']; ?>.html" title="<?php echo $otorhino[0]['post_title']; ?>"><?php echo $otorhino[0]['post_title']; ?></a></h3>
+				<div class="hadleft">
+					<a href="<?php echo base_url().$otorhino[0]['cate_rewrite'].'/'.$otorhino[0]['post_title_rewrite'].'-'.$otorhino[0]['post_id']; ?>.html">
+						<img src="<?php echo base_url()."uploads/hanews/thumb/".$otorhino[0]['post_image']; ?>" alt="<?php echo $otorhino[0]['post_title']; ?>" height="66" width="86">
+					</a>
+				</div>
 				<div class="hadright">
-				  <p class="title">
-					  The paper boat is a folded boat able to swim - for a while. Obviously it is well known all over the ...			</p>
+				  <p class="title">The paper boat is a folded boat able to swim - for a while. Obviously it is well known all over the ...</p>
 				</div>
 				<div class="cls"></div>
 			  </div>
 			  <ul>
-				  <li><a href="#">Sydney's losing something special</a></li>
-				  <li><a href="#">Girl, 13, missing on family holiday</a></li>
-				  <li><a href="#">Family's fury over father's death</a></li>
-				  <li><a href="#">New Year's resolution as organisers back down</a></li>
+				  <?php unset($otorhino[0]); ?>
+				  <?php foreach($otorhino as $posts){ ?>
+				  <li><a href="<?php echo base_url().$posts['cate_rewrite'].'/'.$posts['post_title_rewrite'].'-'.$posts['post_id']; ?>.html" title="<?php echo $posts['post_title']; ?>"><?php echo $posts['post_title']; ?></a></li>
+				  <?php } ?>
 			  </ul>
+			  <?php } ?>
 		  </div>
 	  </div>
 	  <div class="surgery">
 		  <div class="haboxtitle">
-			  <h2>Spine</h2>
+			  <h2>Nose</h2>
 			  <div class="dropdown-panel">
 				<button class="dropdown-panel-toggle generic-selector">
 					<span class="icon ddown">More</span>

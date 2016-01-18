@@ -6,7 +6,7 @@
     <ul>
         <?php if(isset($listcago)){ ?>
 	    <?php $i=1;foreach($listcago as $menu){ ?>
-	    <li><a href="<?php echo base_url()."kid-".$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
+	    <li><a href="<?php echo base_url().$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
 	    <?php if($i == 5){ break; } $i++;} } ?>
     </ul>
   </div>
@@ -16,7 +16,7 @@
       <ul>
 	    <?php if(isset($listcago)){ ?>
 	    <?php foreach($listcago as $menu){ ?>
-	    <li><a href="<?php echo base_url()."kid-".$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
+	    <li><a href="<?php echo base_url().$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
 	    <?php } } ?>
 	  </ul>
 	  <div class="line"></div>

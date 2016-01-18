@@ -131,6 +131,7 @@ box-shadow:0px 4px 2px #F4F4F4 inset;}
 .sur-content{padding-top:5px}
 .sur-content ul li{margin-bottom: 3px;padding: 6px 14px 6px 0;border-bottom: 1px dotted #dfe1e3;}
 .sur-content ul li:last-child{border:none}
+.sur-content ul li a:hover{color:#007CC3}
 .hauthor{margin-top:10px;font-size:11px}
 .hdauthor{font-size:11px;}.hdauthor span{color:#09C}
 .hauthor span{color:#09C}
