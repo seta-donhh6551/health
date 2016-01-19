@@ -20,7 +20,7 @@ p{color:#555;line-height:18px}
 #menumid ul li:last-child{border:none}
 #content{width:940px;height:auto;margin:0px auto;margin-bottom:40px}
 #navmenu{height:17px;padding:10px 7px 10px 0px;border-bottom:1px solid #C8CED1;background-image:linear-gradient(#FFF, #F5F5F5 98%, #FFF 100%);}
-#navmenu h2{font-size:15px;float:left;text-transform:uppercase;color:#5d9731;}
+#navmenu h2{font-size:15px;float:left;text-transform:uppercase;color:#83898d;}
 #navmenu ul{float:right}
 #navmenu ul li{display:inline;margin-right:6px;padding-right:6px;border-right:1px solid #7FBDE1;color:#555}
 #navmenu ul li:last-child{border:none}
@@ -44,13 +44,14 @@ p{color:#555;line-height:18px}
 #haleft ul li{margin-bottom:10px;border-bottom:1px dotted #CCC;padding-bottom:5px}
 #haleft ul li:last-child{border-bottom:none;padding-bottom:0px}
 #haleft ul li a:hover{text-decoration:underline}
-#quick-view{width:134px;min-height:150px;background:#EEE;padding:10px 3px;}
-#quick-view h3{color:#09c;margin-bottom: 10px}
-#quick-view ul li a{color: #09c}
+#quick-view{width:132px;min-height:150px;background:#EEE;padding:10px 3px 10px 5px}
+#quick-view h3{color:#09c;margin-bottom: 10px;border-bottom: 1px solid #DDD;padding-bottom: 5px}
+#quick-view ul li a{color:#333;font-size:12px}
 #adsone{margin:10px 0px}
 #category{padding-top:3px}
 #homelink{min-height:25px;padding-top:10px;border-bottom:1px solid #CCC;margin-bottom:10px}
-#homelink a{color:#007EC4;font-weight:normal}
+#homelink a{color:#555;font-weight:normal}
+#homelink a:hover{color:#007EC4}
 #detailnews{padding:10px 0px}
 #detailnews a{color:#09c}
 #detailnews a:hover{color:#F63}
@@ -238,17 +239,17 @@ ul.haquest li span{color:#CD4727;font-size:11px;font-weight:bold;margin-right:5p
     background-position: -104px 0;
 }
 .postinfo{padding:5px 0px;color:#444;line-height:17px}
-.defull{line-height:18px;color:#444;padding-top:10px}
+.defull{line-height:18px;color:#444;padding-top:10px;text-align:justify}
 .defull img{max-width:520px;margin:5px 0px}.deimg{width:500px;margin:7px 0px}
 .detailnews h1{font-size:22px;color:#333;font-weight:normal}
-.deshinfo{margin:15px 0px;}.deshinfo span,.deshinfo p{color:#333;font-size:14px;line-height:19px}
+.deshinfo{margin:15px 0px;color:#444}.deshinfo span,.deshinfo p{color:#333;font-size:14px;line-height:19px}
 .deinfo, .deinfo span,.deinfo p{color:#333;line-height:19px;margin:10px 0px}
 .defull span,.defull p{font-size:13px;line-height:19px;margin:5px 0px}
 .defull span{color:#444;}
 .defull ol,.defull ul{padding-left:20px;list-style-type:disc}
 .defull ul li{margin-bottom:3px}
 .defull h3{margin-bottom:5px}
-.defull h3 strong{color:#09C;}
+.defull h3 strong{color:#09C;text-transform:uppercase}
 .deshinfo span{color:#09c}
 .fixed_top{position:fixed;top:34px;z-index:99;}
 .fixed_bottom{position:fixed;bottom:500px;z-index:99;}

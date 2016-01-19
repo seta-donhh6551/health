@@ -81,7 +81,7 @@
 					</a>
 				</div>
 				<div class="hadright">
-				  <p class="title">The paper boat is a folded boat able to swim - for a while. Obviously it is well known all over the ...</p>
+				  <p class="title"><?php echo $otorhino[0]['post_shotinfo']; ?></p>
 				</div>
 				<div class="cls"></div>
 			  </div>
