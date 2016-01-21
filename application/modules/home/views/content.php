@@ -1,6 +1,6 @@
 <div id="content">
   <div id="navmenu">
-    <h2>Dermatology</h2>
+    <h2>Living healthy</h2>
     <ul>
     <?php if(isset($rancates)){ ?>
     <?php foreach($rancates as $menu){ ?>
