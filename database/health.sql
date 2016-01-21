@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 19, 2016 at 11:27 AM
+-- Generation Time: Jan 21, 2016 at 10:25 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -66,24 +66,33 @@ CREATE TABLE IF NOT EXISTS `tbl_categorie` (
   `status` char(1) NOT NULL DEFAULT '1',
   `type` int(1) NOT NULL DEFAULT '1',
   `cate_id` int(10) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=74 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=83 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_categorie`
 --
 
 INSERT INTO `tbl_categorie` (`id`, `name`, `title`, `rewrite`, `shortinfo`, `keywords`, `description`, `datetime`, `order`, `image`, `status`, `type`, `cate_id`) VALUES
-(35, 'Cardiology', 'Cardiology', 'cardiology', 'Cardiology', 'Cardiology', 'Cardiology', '30/12/2015-07:07:04', 0, 'cardiology.jpg', '1', 1, 3),
-(36, 'Respiratory', 'Respiratory', 'respiratory', 'Respiratory', 'Respiratory', 'Respiratory', '30/12/2015-07:16:56', 0, 'respiratory.jpg', '1', 1, 3),
-(37, 'Gastroenterology', 'Gastroenterology', 'gastroenterology', 'Gastroenterology', 'Gastroenterology', 'Gastroenterology', '30/12/2015-07:19:55', 0, 'gastroenterology.jpg', '1', 1, 3),
-(38, 'Hematology', 'Hematology', 'hematology', 'Hematology', 'Hematology', 'Hematology', '30/12/2015-07:24:04', 0, 'hematology.jpg', '1', 1, 3),
-(39, 'Nerology', 'Nerology', 'nerology', 'Nerology', 'Nerology', 'Nerology', '30/12/2015-07:25:28', 0, 'nerology.jpg', '1', 1, 3),
-(40, 'Nephrology, urology', 'Nephrology, urology', 'nephrology-urology', 'Nephrology, urology', 'Nephrology, urology', 'Nephrology, urology', '30/12/2015-07:27:23', 0, 'nephrology-urology.jpg', '1', 1, 3),
+(35, 'Cardiology', 'Cardiology', 'cardiology', 'Cardiology', 'Cardiology', 'Cardiology', '21/01/2016-08:33:04', 0, 'cardiology.jpg', '1', 1, 6),
+(36, 'Respiratory', 'Respiratory', 'respiratory', 'Respiratory', 'Respiratory', 'Respiratory', '21/01/2016-08:33:17', 0, 'respiratory.jpg', '1', 1, 6),
+(37, 'Gastroenterology', 'Gastroenterology', 'gastroenterology', 'Gastroenterology', 'Gastroenterology', 'Gastroenterology', '21/01/2016-08:33:23', 0, 'gastroenterology.jpg', '1', 1, 6),
+(38, 'Hematology', 'Hematology', 'hematology', 'Hematology', 'Hematology', 'Hematology', '21/01/2016-08:33:35', 0, 'hematology.jpg', '1', 1, 6),
+(39, 'Nerology', 'Nerology', 'nerology', 'Nerology', 'Nerology', 'Nerology', '21/01/2016-08:33:40', 0, 'nerology.jpg', '1', 1, 6),
+(40, 'Nephrology, urology', 'Nephrology, urology', 'nephrology-urology', 'Nephrology, urology', 'Nephrology, urology', 'Nephrology, urology', '21/01/2016-08:33:45', 0, 'nephrology-urology.jpg', '1', 1, 6),
 (41, 'Anesthesia resuscitation', 'Anesthesia resuscitation', 'anesthesia-resuscitation', 'Anesthesia resuscitation', 'Anesthesia resuscitation', 'Anesthesia resuscitation', '28/12/2015-04:20:18', 0, '', '1', 1, 5),
-(43, 'Endocrinology', 'Endocrinology', 'endocrinology', 'Endocrinology', 'Endocrinology', 'Endocrinology', '30/12/2015-07:52:38', 0, 'endocrinology.jpg', '1', 1, 3),
-(44, 'Psychiatric', 'Psychiatric', 'psychiatric', 'Psychiatric', 'Psychiatric', 'Psychiatric', '30/12/2015-08:04:00', 0, 'psychiatric.jpg', '1', 1, 3),
+(43, 'Endocrinology', 'Endocrinology', 'endocrinology', 'Endocrinology', 'Endocrinology', 'Endocrinology', '21/01/2016-08:33:49', 0, 'endocrinology.jpg', '1', 1, 6),
+(44, 'Psychiatric', 'Psychiatric', 'psychiatric', 'Psychiatric', 'Psychiatric', 'Psychiatric', '21/01/2016-08:33:54', 0, 'psychiatric.jpg', '1', 1, 6),
 (45, 'Contagious', 'Contagious', 'contagious', '&#160;', 'Contagious', 'Contagious', '30/12/2015-09:06:57', 0, '', '1', 1, 6),
-(46, 'Immune', 'Immune', 'immune', '&#160;', 'Immune', 'Immune', '30/12/2015-09:14:59', 0, '', '1', 1, 6);
+(46, 'Immune', 'Immune', 'immune', '&#160;', 'Immune', 'Immune', '30/12/2015-09:14:59', 0, '', '1', 1, 6),
+(74, 'Fitness & exercise', 'Fitness & exercise', 'fitness-exercise', 'Fitness &amp; Exercise', 'Fitness & Exercise', 'Fitness & Exercise', '21/01/2016-09:26:29', 0, 'fitness-exercise.jpg', '1', 1, 4),
+(75, 'Food & Recipes', 'Food & Recipes', 'food-recipes', 'Food &amp; Recipes', 'Food & Recipes', 'Food & Recipes', '21/01/2016-09:27:57', 1, 'food-recipes.jpg', '1', 1, 4),
+(76, 'Diet & Weight Management', 'Diet & Weight Management', 'diet-weight-management', 'Diet &amp; Weight Management', 'Diet & Weight Management', 'Diet & Weight Management', '21/01/2016-09:31:16', 2, 'diet-weight-management.jpg', '1', 1, 4),
+(77, 'Prevention & Wellness', 'Prevention & Wellness', 'prevention-wellness', 'Prevention &amp; Wellness', 'Prevention & Wellness', 'Prevention & Wellness', '21/01/2016-09:34:42', 3, 'prevention-wellness.jpg', '1', 1, 4),
+(78, 'Pregnancy', 'Trying to conceive', 'pregnancy', 'Trying to conceive', 'Trying to conceive', 'Trying to conceive', '21/01/2016-10:06:50', 0, 'pregnancy-icon.jpg', '1', 1, 3),
+(79, 'Newborn & Baby', 'Newborn & Baby', 'newborn-baby', 'Newborn &amp; Baby', 'Newborn & Baby', 'Newborn & Baby', '21/01/2016-10:10:16', 1, 'newborn-baby.jpg', '1', 1, 3),
+(80, 'Baby names', 'Baby names', 'baby-names', '&#160;', 'Baby names', 'Baby names', '21/01/2016-10:05:25', 2, 'baby-names.jpg', '1', 1, 3),
+(81, 'Children’s Health', 'Children''s Health', 'childrens-health', '&#160;', 'Children''s Health', 'Children''s Health', '21/01/2016-10:21:29', 2, 'childrens-health.jpg', '1', 1, 3),
+(82, 'Children''s Vaccines', 'Children''s Vaccines', 'childrens-vaccines', '&#160;', 'Children''s Vaccines', 'Children''s Vaccines', '21/01/2016-10:19:57', 3, 'children-vacxin.jpg', '1', 1, 3);
 
 -- --------------------------------------------------------
 
@@ -110,13 +119,13 @@ CREATE TABLE IF NOT EXISTS `tbl_category` (
 --
 
 INSERT INTO `tbl_category` (`cate_id`, `cate_name`, `cate_title`, `cate_rewrite`, `cate_info`, `cate_ext`, `cate_images`, `cate_keys`, `cate_description`, `cate_status`, `cate_order`) VALUES
-(1, 'Geriatric', NULL, 'geriatric', 'Geriatric medicine', 'Geriatric medicine is the term related to the diagnosis, treatment and prevention of disease in older people and the problems specific to aging.', 'HTC_One_review.jpg', 'Geriatric medicine', 'Geriatric medicine is the term related to the diagnosis, treatment and prevention of disease in older people and the problems specific to aging.', 1, 3),
-(2, 'Pediatrics', NULL, 'pediatrics', 'Pediatrics is the filed that deals with the development, care, and diseases of babies and children', 'Pediatrics is the field of medicine that is concerned with the health of infants, children, and adolescents; their growth and development; and their opportunity to achieve full potential as adults.', 'pediatrician.jpg', 'Pediatrics', 'Pediatrics is the field of medicine that is concerned with the health of infants, children, and adolescents; their growth and development; and their opportunity to achieve full potential as adults.', 1, 4),
-(3, 'Internal medecine', NULL, 'internal-medecine', 'Internal medicine is the medical specialty dedicated to the diagnosis and medical treatment of adults', 'Internal medicine or general medicine is  the branch of medical science concerned with the diagnosis and nonsurgical treatment of disorders of the internal structures of the body', 'internal-medicine.jpg', 'Internal medecine', 'Internal medicine or general medicine is  the branch of medical science concerned with the diagnosis and nonsurgical treatment of disorders of the internal structures of the body', 1, 2),
-(4, 'Dermatology', 'Dermatology is the branch of medicine dealing with the skin and its diseases', 'dermatology', 'Dermatosis are diseases of the integumentary system,  affecting the surface of the body: skin, fur, hair, nails, and skin glands', 'Dermatology is the branch of medicine concerned with the diagnosis, treatment, and prevention of diseases of the skin, hair, nails, oral cavity and genitals, cosmetic care and enhancement. It is a specialty with both medical and surgical aspects.', 'dermatology.jpg', 'Dermatology', 'Dermatology is the branch of medicine concerned with the diagnosis, treatment, and prevention of diseases of the skin, hair, nails, oral cavity and genitals, cosmetic care and enhancement. It is a specialty with both medical and surgical aspects.', 1, 0),
-(5, 'Surgery', NULL, 'surgery', 'Surgery', 'Surgery is the branch of medicine that employs operations in the treatment of disease or injury,  involving cutting, abrading, suturing, or otherwise physically changing body tissues and organs.', 'kids-cooking-in-kitchen.jpg', 'Surgery', 'Surgery is the branch of medicine that employs operations in the treatment of disease or injury,  involving cutting, abrading, suturing, or otherwise physically changing body tissues and organs.', 1, 2),
-(6, 'Allergy', NULL, 'allergy', 'Allergies are abnormal immune system reactions to things that are typically harmless to most people.', 'allergy is An abnormally high sensitivity to certain substances, such as pollens, foods, or microorganisms. Common indications of allergy may include sneezing, itching, and skin rashes.', 'allergy.jpg', 'Allergy', 'Allergy is An abnormally high sensitivity to certain substances, such as pollens, foods, or microorganisms. Common indications of allergy may include sneezing, itching, and skin rashes.', 1, 1),
-(7, 'Otorhinolaryngology', 'Otorhinolaryngology', 'otorhinolaryngology', 'Otorhinolaryngology', '&#160;', '', 'Otorhinolaryngology', 'Otorhinolaryngology', 0, 2);
+(1, 'Pictures', '', 'pictures', 'Geriatric medicine', 'Geriatric medicine is the term related to the diagnosis, treatment and prevention of disease in older people and the problems specific to aging.', 'HTC_One_review.jpg', 'Geriatric medicine', 'Geriatric medicine is the term related to the diagnosis, treatment and prevention of disease in older people and the problems specific to aging.', 1, 3),
+(2, 'Pediatrics', NULL, 'pediatrics', 'Pediatrics is the filed that deals with the development, care, and diseases of babies and children', 'Pediatrics is the field of medicine that is concerned with the health of infants, children, and adolescents; their growth and development; and their opportunity to achieve full potential as adults.', 'pediatrician.jpg', 'Pediatrics', 'Pediatrics is the field of medicine that is concerned with the health of infants, children, and adolescents; their growth and development; and their opportunity to achieve full potential as adults.', 0, 4),
+(3, 'Parents', '', 'parents', 'Internal medicine is the medical specialty dedicated to the diagnosis and medical treatment of adults', 'Internal medicine or general medicine is  the branch of medical science concerned with the diagnosis and nonsurgical treatment of disorders of the internal structures of the body', 'internal-medicine.jpg', 'Internal medecine', 'Internal medicine or general medicine is  the branch of medical science concerned with the diagnosis and nonsurgical treatment of disorders of the internal structures of the body', 1, 2),
+(4, 'Living healthy', 'Dermatology is the branch of medicine dealing with the skin and its diseases', 'living-healthy', 'Dermatosis are diseases of the integumentary system,  affecting the surface of the body: skin, fur, hair, nails, and skin glands', 'Dermatology is the branch of medicine concerned with the diagnosis, treatment, and prevention of diseases of the skin, hair, nails, oral cavity and genitals, cosmetic care and enhancement. It is a specialty with both medical and surgical aspects.', 'dermatology.jpg', 'Dermatology', 'Dermatology is the branch of medicine concerned with the diagnosis, treatment, and prevention of diseases of the skin, hair, nails, oral cavity and genitals, cosmetic care and enhancement. It is a specialty with both medical and surgical aspects.', 1, 0),
+(5, 'Drugs', '', 'drugs', 'Drugs', 'Surgery is the branch of medicine that employs operations in the treatment of disease or injury,  involving cutting, abrading, suturing, or otherwise physically changing body tissues and organs.', 'kids-cooking-in-kitchen.jpg', 'Drugs', 'Surgery is the branch of medicine that employs operations in the treatment of disease or injury,  involving cutting, abrading, suturing, or otherwise physically changing body tissues and organs.', 1, 2),
+(6, 'Diseases', '', 'diseases', 'Allergies are abnormal immune system reactions to things that are typically harmless to most people.', 'allergy is An abnormally high sensitivity to certain substances, such as pollens, foods, or microorganisms. Common indications of allergy may include sneezing, itching, and skin rashes.', 'allergy.jpg', 'Allergy', 'Allergy is An abnormally high sensitivity to certain substances, such as pollens, foods, or microorganisms. Common indications of allergy may include sneezing, itching, and skin rashes.', 1, 1),
+(7, 'Symptom checker', 'Symptom checker', 'symptom-checker', 'Otorhinolaryngology', '&#160;', '', 'Otorhinolaryngology', 'Otorhinolaryngology', 1, 2);
 
 -- --------------------------------------------------------
 
@@ -783,7 +792,7 @@ MODIFY `article_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 -- AUTO_INCREMENT for table `tbl_categorie`
 --
 ALTER TABLE `tbl_categorie`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=74;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=83;
 --
 -- AUTO_INCREMENT for table `tbl_category`
 --

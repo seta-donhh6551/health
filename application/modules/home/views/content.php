@@ -223,7 +223,7 @@
       <?php if(isset($menuthree)){ ?>
       <?php $i=1;foreach($menuthree as $types){ ?>
         <?php if($i <= 6){ ?>
-      	<div class="listtypes" style="margin:10px 0px 35px 0px">
+      	<div class="listtypes" style="margin:10px 0px 15px 0px">
         	<?php $length = strlen($types['name']); ?>
         	<?php $name = str_replace("kids-","",$types['cate_rewrite']); ?>
         	<a href="<?php echo base_url().$name."/".$types['rewrite']; ?>.html"><img src="<?php echo base_url()."uploads/cate/thumb/".$types['image']; ?>" alt="<?php echo $types['name']; ?>" title="<?php echo $types['name']; ?>" /></a>
