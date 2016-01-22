@@ -64,7 +64,7 @@
   <div class="haboxs mg-bot br-reset">
 	  <div class="surgery">
 		  <div class="haboxtitle">
-			  <h2>Otorhinolaryngology</h2>
+			  <h2>Pregnancy</h2>
 			  <div class="dropdown-panel">
 				<button class="dropdown-panel-toggle generic-selector">
 					<span class="icon ddown">More</span>
@@ -96,7 +96,7 @@
 	  </div>
 	  <div class="surgery">
 		  <div class="haboxtitle">
-			  <h2>Nose</h2>
+			  <h2>Newborn & Baby</h2>
 			  <div class="dropdown-panel">
 				<button class="dropdown-panel-toggle generic-selector">
 					<span class="icon ddown">More</span>
@@ -123,7 +123,7 @@
 	  </div>
 	  <div class="surgery mg-reset">
 		  <div class="haboxtitle">
-			  <h2>Anatomy</h2>
+			  <h2>Children’s Health</h2>
 			  <div class="dropdown-panel">
 				<button class="dropdown-panel-toggle generic-selector">
 					<span class="icon ddown">More</span>
@@ -265,7 +265,7 @@
       <div class="cls"></div>
     </div>
   </div>
-  <div class="haboxs haborone mg-reset">
+  <div class="haboxs haborone">
     <div class="heath haboxtitle">
       <h2><?php echo $catefour['cate_name']; ?></h2>
       <ul>
