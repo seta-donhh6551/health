@@ -242,25 +242,12 @@
         <?php } ?>
       </div>
       <div class="hacolums last">
-       <!-- List types -->
-      <?php if(isset($menuthree)){ ?>
-      <?php $j=1;foreach($menuthree as $types){ ?>
-      	<?php if($j > 6){ ?>
-      	<div class="listtypes" style="margin:10px 0px 35px 0px">
-        	<?php $length = strlen($types['name']); ?>
-        	<?php $name = str_replace("kids-","",$types['cate_rewrite']); ?>
-        	<a href="<?php echo base_url().$name.'/'.$types['rewrite']; ?>.html"><img src="<?php echo base_url()."uploads/cate/thumb/".$types['image']; ?>" alt="<?php echo $types['name']; ?>" title="<?php echo $types['name']; ?>" /></a>
-            <h3 <?php if($length < 10){ echo "style='padding-left:10px'";}?>><a href="<?php echo base_url().$name."/".$types['rewrite']; ?>.html"><?php echo $types['name']; ?></a></h3>
-        </div>
-        <?php } ?>
-      <?php $j++;} } ?>
-        <!--ul class="haquest">
-          <?php /* if(isset($listtwo)){ ?>
-      	  <?php $i=1; foreach($listtwo as $phone){ ?>
-          <?php if($i > 2){ ?>
-          <li><span class="author"><?php echo $phone['post_author']; ?></span><a href="<?php echo base_url().$phone['cate_rewrite']."/".$phone['post_title_rewrite']."-".$phone['post_id']; ?>.html" title="<?php echo $phone['post_title']; ?>"><?php echo $phone['post_title']; ?></a></li>
-          <?php } $i++; } } */?>
-        </ul-->
+        <ul class="haquest">
+          <?php if(isset($listthree)){ ?>
+      	  <?php foreach($listthree as $diseases){ ?>
+          <li><span class="author"><?php echo $diseases['post_author']; ?></span><a href="<?php echo base_url().$diseases['cate_rewrite']."/".$diseases['post_title_rewrite']."-".$diseases['post_id']; ?>.html" title="<?php echo $diseases['post_title']; ?>"><?php echo $diseases['post_title']; ?></a></li>
+		  <?php } } ?>
+        </ul>
       </div>
       <div class="cls"></div>
     </div>
