@@ -38,7 +38,7 @@
 			$this->db->join("tbl_category","tbl_category.cate_id = tbl_categorie.cate_id");
 			$this->db->where("tbl_categorie.cate_id",$cateid);
 			$this->db->where("tbl_categorie.type !=",$type);
-			$this->db->order_by("order","asc");
+			$this->db->order_by("tbl_categorie.order","asc");
 			$this->db->limit(4);
 			return $this->db->get($this->_categori)->result_array();
 		}

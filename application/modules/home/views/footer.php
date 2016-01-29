@@ -32,9 +32,11 @@
       <h3>Internal medecine</h3>
       <ul>
         <?php if(isset($menuthree)){ ?>
-        <?php foreach($menuthree as $art){ ?>
+        <?php $i= 1; foreach($menuthree as $art){ ?>
+		  <?php if($i <= 6){ ?>
           <li><a href="<?php echo base_url().$art['cate_rewrite']."/".$art['rewrite']; ?>.html" title="<?php echo $art['name']; ?>"><?php echo $art['name']; ?></a></li>
-        <?php } } ?>
+		  <?php } ?>
+        <?php ++$i; } } ?>
       </ul>
     </div>
     <div class="footcols flast">

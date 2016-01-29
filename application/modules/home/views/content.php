@@ -72,22 +72,22 @@
 			  </div>
 		  </div>
 		  <div class="sur-content">
-			  <?php if(isset($otorhino) && $otorhino){ ?>
+			  <?php if(isset($pregnancy) && $pregnancy){ ?>
 			  <div class="hotquest mg-bot">
-				  <h3><a href="<?php echo base_url().$otorhino[0]['cate_rewrite'].'/'.$otorhino[0]['post_title_rewrite'].'-'.$otorhino[0]['post_id']; ?>.html" title="<?php echo $otorhino[0]['post_title']; ?>"><?php echo $otorhino[0]['post_title']; ?></a></h3>
+				  <h3><a href="<?php echo base_url().$pregnancy[0]['cate_rewrite'].'/'.$pregnancy[0]['post_title_rewrite'].'-'.$pregnancy[0]['post_id']; ?>.html" title="<?php echo $pregnancy[0]['post_title']; ?>"><?php echo $pregnancy[0]['post_title']; ?></a></h3>
 				<div class="hadleft">
-					<a href="<?php echo base_url().$otorhino[0]['cate_rewrite'].'/'.$otorhino[0]['post_title_rewrite'].'-'.$otorhino[0]['post_id']; ?>.html">
-						<img src="<?php echo base_url()."uploads/hanews/thumb/".$otorhino[0]['post_image']; ?>" alt="<?php echo $otorhino[0]['post_title']; ?>" height="66" width="86">
+					<a href="<?php echo base_url().$pregnancy[0]['cate_rewrite'].'/'.$pregnancy[0]['post_title_rewrite'].'-'.$pregnancy[0]['post_id']; ?>.html">
+						<img src="<?php echo base_url()."uploads/hanews/thumb/".$pregnancy[0]['post_image']; ?>" alt="<?php echo $pregnancy[0]['post_title']; ?>" height="66" width="86">
 					</a>
 				</div>
 				<div class="hadright">
-				  <p class="title"><?php echo $otorhino[0]['post_shotinfo']; ?></p>
+				  <p class="title"><?php echo $pregnancy[0]['post_shotinfo']; ?></p>
 				</div>
 				<div class="cls"></div>
 			  </div>
 			  <ul>
-				  <?php unset($otorhino[0]); ?>
-				  <?php foreach($otorhino as $posts){ ?>
+				  <?php unset($pregnancy[0]); ?>
+				  <?php foreach($pregnancy as $posts){ ?>
 				  <li><a href="<?php echo base_url().$posts['cate_rewrite'].'/'.$posts['post_title_rewrite'].'-'.$posts['post_id']; ?>.html" title="<?php echo $posts['post_title']; ?>"><?php echo $posts['post_title']; ?></a></li>
 				  <?php } ?>
 			  </ul>

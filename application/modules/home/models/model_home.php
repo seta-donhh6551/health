@@ -21,6 +21,7 @@
 			$this->db->join($this->_category,"tbl_category.cate_id = tbl_categorie.cate_id");
 			$this->db->where("tbl_categorie.cate_id",$cateid);
 			$this->db->where("tbl_categorie.type",1);
+			$this->db->order_by("tbl_categorie.order","asc");
 			$this->db->limit($limit);
 			return $this->db->get($this->_categorie)->result_array();
 		}
@@ -43,6 +44,13 @@
 		public function getquest($cateid, $limit){
 			$this->db->join($this->_category,"tbl_posts.cate_id = tbl_category.cate_id");
 			$this->db->where("tbl_posts.cate_id",$cateid);
+			$this->db->order_by("tbl_posts.post_id","desc");
+			$this->db->limit($limit);
+			return $this->db->get($this->_table)->result_array();
+		}
+		public function getPostsBySubid($subid, $limit){
+			$this->db->join($this->_category,"tbl_posts.cate_id = tbl_category.cate_id", "left");
+			$this->db->where("tbl_posts.cago_id",$subid);
 			$this->db->order_by("tbl_posts.post_id","desc");
 			$this->db->limit($limit);
 			return $this->db->get($this->_table)->result_array();
