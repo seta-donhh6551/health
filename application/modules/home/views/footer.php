@@ -19,17 +19,16 @@
       </ul>
     </div>
     <div class="footcols">
-      <h3>Allergy</h3>
+      <h3>Parents</h3>
       <ul>
 		<?php if(isset($menutwo)){ ?>
         <?php foreach($menutwo as $quiz){ ?>
           <li><a href="<?php echo base_url().$quiz['cate_rewrite']."/".$quiz['rewrite']; ?>.html" title="<?php echo $quiz['name']; ?>"><?php echo $quiz['name']; ?></a></li>
         <?php } } ?>
-        <li><a href="<?php echo base_url(); ?>allergy/allergic-rhinitis.html" title="Allergic rhinitis">Allergic rhinitis</a></li>
       </ul>
     </div>
     <div class="footcols">
-      <h3>Internal medecine</h3>
+      <h3>Diseases</h3>
       <ul>
         <?php if(isset($menuthree)){ ?>
         <?php $i= 1; foreach($menuthree as $art){ ?>
@@ -40,10 +39,10 @@
       </ul>
     </div>
     <div class="footcols flast">
-      <h3>Surgery</h3>
+      <h3>Living healthy</h3>
       <ul>
-        <?php if(isset($menufour)){ ?>
-        <?php foreach($menufour as $cooking){ ?>
+        <?php if(isset($menufive)){ ?>
+        <?php foreach($menufive as $cooking){ ?>
           <li><a href="<?php echo base_url().$cooking['cate_rewrite']."/".$cooking['rewrite']; ?>.html" title="<?php echo $cooking['name']; ?>"><?php echo $cooking['name']; ?></a></li>
         <?php } } ?>
       </ul>

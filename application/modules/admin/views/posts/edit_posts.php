@@ -31,7 +31,7 @@
 						<span class="title_wrapper_bottom"></span>
 					</div>
 					<!--[if !IE]>end title wrapper<![endif]-->
-					
+
 					<!--[if !IE]>start section content<![endif]-->
 					<div class="section_content">
 						<span class="section_content_top"></span>
@@ -63,6 +63,10 @@
                                     <div class="form_items">
                                     	<div class="form_items_left">Short info</div>
                                         <div class="form_items_right"><input name="post_shotinfo" type="text" value="<?php echo $get['post_shotinfo']; ?>" size="35" /></div>
+                                    </div>
+									<div class="form_items">
+                                    	<div class="form_items_left">Thứ tự</div>
+                                        <div class="form_items_right"><input name="post_order" type="text" value="<?php echo $get['post_order']; ?>" size="35" /></div>
                                     </div>
                                     <div class="form_items">
                                     	<div class="form_items_left">Category</div>
@@ -118,26 +122,26 @@
                                     <div class="form_items">
                                     	<div class="form_items_left">Short description</div>
                                         <div class="form_items_right">
-                                        <?php 
+                                        <?php
 										$fck = new FCKeditor('post_info');
 										$fck->BasePath = sBASEPATH;
 										$fck->Value  = $get['post_info'];
 										$fck->Width  = '100%';
 										$fck->Height = 400;
 										$fck->Create();
-									   ?>   
+									   ?>
                                    </div>
                                     <div class="form_items">
                                     	<div class="form_items_left">Full information</div>
                                         <div class="form_items_right">
-                                        <?php 
+                                        <?php
 										$fck = new FCKeditor('post_value');
 										$fck->BasePath = sBASEPATH;
 										$fck->Value  = $get['post_value'];
 										$fck->Width  = '100%';
 										$fck->Height = 400;
 										$fck->Create();
-									   ?>  
+									   ?>
                                         </div>
                                     </div>
                                     <div class="form_items">

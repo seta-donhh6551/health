@@ -9,7 +9,7 @@
 			$this->load->helper("form");
 			$this->load->library("form_validation");
 			$this->load->model("mposts");
-			$this->load->library("string");			
+			$this->load->library("string");
 		}
 		public function index(){
 			$config['base_url'] = base_url().'admin/posts/index/';
@@ -21,7 +21,7 @@
 			$config['cur_tag_open'] = '<span class="curpage">';
 			$config['cur_tag_close'] = '</span>';
 			$this->load->library("pagination");
-			$this->pagination->initialize($config); 
+			$this->pagination->initialize($config);
 			$start = $this->uri->segment(4);
 			$data['title']="Manage articles";
 			$data['act'] = 5;
@@ -35,7 +35,7 @@
 			$data['data'] = "";
 			$data['act'] = 5;
 			$data['listtypes'] = $this->mposts->listtypes();
-			$data['listcate'] = $this->mposts->listcate();			
+			$data['listcate'] = $this->mposts->listcate();
 			if($this->input->post("ok") != ""){
 				$this->form_validation->set_rules("post_title","Tiêu đề","min_length[5]");
 				if($this->form_validation->run() == FALSE){
@@ -44,15 +44,16 @@
 					  $url = str_replace(' ', '-',strtolower($this->string->replace($this->input->post('post_title'))));
 					  $db = array(
 							"post_title"   	=> $this->input->post("post_title"),
-							"post_title_rewrite"  => $url,							
+							"post_title_rewrite"  => $url,
 							"post_author" 	=> $this->input->post("post_author"),
 							"post_source" 	=> $this->input->post("post_source"),
-							"post_shotinfo" => $this->input->post("post_shotinfo"),						
+							"post_shotinfo" => $this->input->post("post_shotinfo"),
 							"post_info" 	=> $this->input->post("post_info"),
-							"post_value"	=> $this->input->post("post_value"),		
+							"post_value"	=> $this->input->post("post_value"),
 							"post_date"    	=> date("Y-m-d H:i:s"),
-							"post_keys"     => $this->input->post("post_keys"),		
+							"post_keys"     => $this->input->post("post_keys"),
 							"post_des"		=> $this->input->post("post_des"),
+						    "post_order"	=> $this->input->post("post_order"),
 							"type_id"		=> $this->input->post("type_id"),
 							"cate_id"		=> $this->input->post("cate_id"),
 							"cago_id"		=> $this->input->post("cago_id"),
@@ -101,7 +102,7 @@
 								$data['listtypes'] = $this->mposts->listtypes();
 								$data['get'] = $this->mposts->getdata($id);
 								$data['stt'] = $data['get']['post_id'];
-								$data['listcate'] = $this->mposts->listcate();							
+								$data['listcate'] = $this->mposts->listcate();
 								$this->load->view("layout",$data);
 								return FALSE;
 							}else{
@@ -139,13 +140,14 @@
 							"post_title"   	=> $this->input->post("post_title"),
 							"post_title_rewrite"   	=> $url,
 							"post_author" 	=> $this->input->post("post_author"),
-							"post_source" 	=> $this->input->post("post_source"),						
+							"post_source" 	=> $this->input->post("post_source"),
 							"post_info" 	=> $this->input->post("post_info"),
 							"post_shotinfo" => $this->input->post("post_shotinfo"),
-							"post_value"	=> $this->input->post("post_value"),		
+							"post_value"	=> $this->input->post("post_value"),
 							"post_date"    	=> date("Y-m-d H:i:s"),
-							"post_keys"     => $this->input->post("post_keys"),		
+							"post_keys"     => $this->input->post("post_keys"),
 							"post_des"		=> $this->input->post("post_des"),
+						    "post_order"	=> $this->input->post("post_order"),
 							"type_id"		=> $this->input->post("type_id"),
 							"cate_id"		=> $this->input->post("cate_id"),
 							"cago_id"		=> $this->input->post("cago_id"),
@@ -171,7 +173,7 @@
 								$data['listtypes'] = $this->mposts->listtypes();
 								$data['get'] = $this->mposts->getdata($id);
 								$data['stt'] = $data['get']['post_id'];
-								$data['listcate'] = $this->mposts->listcate();							
+								$data['listcate'] = $this->mposts->listcate();
 								$this->load->view("layout",$data);
 								return FALSE;
 							}else{
@@ -196,7 +198,7 @@
 								$data['listtypes'] = $this->mposts->listtypes();
 								$data['get'] = $this->mposts->getdata($id);
 								$data['stt'] = $data['get']['post_id'];
-								$data['listcate'] = $this->mposts->listcate();							
+								$data['listcate'] = $this->mposts->listcate();
 								$this->load->view("layout",$data);
 								return FALSE;
 							}else{
@@ -207,7 +209,7 @@
 						 }
 						 $this->mposts->update($db,$id);
 						 redirect(base_url()."admin/posts/index");
-						
+
 					}
 				}
 			}else{
@@ -264,7 +266,7 @@
 			$config['thumb_marker'] = FALSE;
 			$config['width'] = 160;
 			$config['height'] = 120;
-			$this->image_lib->initialize($config); 
+			$this->image_lib->initialize($config);
 			$this->image_lib->resize();
 			$this->image_lib->clear();
 		}

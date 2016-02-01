@@ -131,21 +131,22 @@
 			  </div>
 		  </div>
 		  <div class="sur-content">
+			  <?php if(isset($childrenheath) && $childrenheath){ ?>
 			  <div class="hotquest mg-bot">
-				<h3><a href="#">How to make a paper boat</a></h3>
-				<div class="hadleft"> <img src="http://localhost/health/uploads/hanews/thumb/symptoms-of-vitiligo.jpg" alt="" height="66" width="86"> </div>
+				  <h3><a href="<?php echo base_url().$childrenheath[0]['cate_rewrite'].'/'.$childrenheath[0]['post_title_rewrite'].'-'.$childrenheath[0]['post_id']; ?>.html" title="<?php echo $childrenheath[0]['post_title']; ?>"><?php echo $childrenheath[0]['post_title']; ?></a></h3>
+				<div class="hadleft"> <img src="<?php echo base_url()."uploads/hanews/thumb/".$childrenheath[0]['post_image']; ?>" alt="<?php echo $childrenheath[0]['post_title']; ?>" height="66" width="86"> </div>
 				<div class="hadright">
-				  <p class="title">
-					  The paper boat is a folded boat able to swim - for a while. Obviously it is well known all over the ...			</p>
+				  <p class="title"><?php echo $childrenheath[0]['post_shotinfo']; ?></p>
 				</div>
 				<div class="cls"></div>
 			  </div>
 			  <ul>
-				  <li><a href="#">Sydney's losing something special</a></li>
-				  <li><a href="#">Girl, 13, missing on family holiday</a></li>
-				  <li><a href="#">Family's fury over father's death</a></li>
-				  <li><a href="#">New Year's resolution as organisers back down</a></li>
+				  <?php unset($childrenheath[0]); ?>
+				  <?php foreach($childrenheath as $posts){ ?>
+				  <li><a href="<?php echo base_url().$posts['cate_rewrite'].'/'.$posts['post_title_rewrite'].'-'.$posts['post_id']; ?>.html" title="<?php echo $posts['post_title']; ?>"><?php echo $posts['post_title']; ?></a></li>
+				  <?php } ?>
 			  </ul>
+			  <?php } ?>
 		  </div>
 	  </div>
 	  <div class="cls"></div>
@@ -249,30 +250,6 @@
 		  <?php } } ?>
         </ul>
       </div>
-      <div class="cls"></div>
-    </div>
-  </div>
-  <div class="haboxs haborone">
-    <div class="heath haboxtitle">
-      <h2><?php echo $catefour['cate_name']; ?></h2>
-      <ul>
-      <?php if(isset($menufour)){ ?>
-      <?php foreach($menufour as $menu){ ?>
-        <li><a href="<?php echo base_url().$menu['cate_rewrite']."/".$menu['rewrite']; ?>.html"><?php echo $menu['name']; ?></a></li>
-      <?php } } ?>
-      </ul>
-    </div>
-    <div class="haboxcontent">
-    <?php if(isset($listfour)){ ?>
-    <?php $i=1; foreach($listfour as $tablets){?>
-      <div class="hacolums <?php if($i == 3){ echo "last";} ?>">
-        <h3 class="hah3"><a href="<?php echo base_url().$tablets['cate_rewrite']."/".$tablets['post_title_rewrite']."-".$tablets['post_id']; ?>.html"><?php echo $tablets['post_title']; ?></a></h3>
-        <div class="techhot">
-          <a href="<?php echo base_url().$tablets['cate_rewrite']."/".$tablets['post_title_rewrite']."-".$tablets['post_id']; ?>.html"><img src="<?php echo base_url()."uploads/hanews/thumb/$tablets[post_image]"; ?>" width="150" alt="<?php echo $tablets['post_title']; ?>" /></a>
-          <p><?php echo mb_substr($tablets['post_shotinfo'], 0, 250, 'UTF-8'); ?>...</p>
-        </div>
-      </div>
-      <?php $i++; } } ?>
       <div class="cls"></div>
     </div>
   </div>

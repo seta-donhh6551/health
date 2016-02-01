@@ -24,7 +24,7 @@
 		   $data['menuone'] = $this->model_home->getcates(7,4);
 		   $data['menutwo'] = $this->model_home->getcates(6,5);
 		   $data['menuthree'] = $this->model_home->getcates(3,10);
-		   $data['menufour'] = $this->model_home->getcates(5,6);
+		   $data['menufive'] = $this->model_home->getcates(4, 6);
 		   $data['title'] = $data['result']['post_title'];
 		   $this->load->view("posts/layout",$data);
 	   }

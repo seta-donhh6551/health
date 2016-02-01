@@ -56,7 +56,7 @@
 	    <?php } } ?>
 	  </ul>
       <div style="margin:10px 0px;border-bottom:1px solid #CCC"></div>
-      <h2>Hot news</h2>
+      <h2>Top Stories</h2>
       <?php if(isset($newest)){ ?>
       <?php foreach($newest as $news){ ?>
       <div class="newslf"><a href="<?php echo base_url().$news['cate_rewrite']."/".$news['post_title_rewrite']."-".$news['post_id']; ?>.html"><img src="<?php echo base_url()."uploads/hanews/thumb/".$news['post_image']; ?>" alt="<?php echo $news['post_title']; ?>" title="<?php echo $news['post_title']; ?>" /></a>

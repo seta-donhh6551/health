@@ -33,7 +33,7 @@
 		  $data['menuone'] = $this->model_home->getcates(7,4);
 		  $data['menutwo'] = $this->model_home->getcates(6,5);
 		  $data['menuthree'] = $this->model_home->getcates(3,10);
-		  $data['menufour'] = $this->model_home->getcates(5,6);
+		  $data['menufive'] = $this->model_home->getcates(4, 6);
 		  $data['randompost'] = $this->randomquest(35);
 		  $data['related'] = $this->randomquest(65);
 		  $data['title'] 	= $data['category']['cate_info'];
@@ -64,7 +64,7 @@
 		  $data['menuone'] = $this->model_home->getcates(7,4);
 		  $data['menutwo'] = $this->model_home->getcates(6,5);
 		  $data['menuthree'] = $this->model_home->getcates(3,10);
-		  $data['menufour'] = $this->model_home->getcates(5,6);
+		  $data['menufive'] = $this->model_home->getcates(4, 6);
 		  $data['randompost'] = $this->randomquest(35);
 		  $data['title'] = $data['categorie']['title'];
 		  $this->load->view("categories/layout",$data);
@@ -99,7 +99,7 @@
 		  $data['menuone'] = $this->model_home->getcates(7,4);
 		  $data['menutwo'] = $this->model_home->getcates(6,5);
 		  $data['menuthree'] = $this->model_home->getcates(3,10);
-		  $data['menufour'] = $this->model_home->getcates(5,6);
+		  $data['menufive'] = $this->model_home->getcates(4, 6);
 		  $data['randompost'] = $this->randomquest(35);
 		  $data['title'] = $data['categorie']['title'];
 		  $this->load->view("types/layout",$data);

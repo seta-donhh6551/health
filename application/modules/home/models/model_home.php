@@ -51,7 +51,7 @@
 		public function getPostsBySubid($subid, $limit){
 			$this->db->join($this->_category,"tbl_posts.cate_id = tbl_category.cate_id", "left");
 			$this->db->where("tbl_posts.cago_id",$subid);
-			$this->db->order_by("tbl_posts.post_id","desc");
+			$this->db->order_by("tbl_posts.post_order","desc");
 			$this->db->limit($limit);
 			return $this->db->get($this->_table)->result_array();
 		}
