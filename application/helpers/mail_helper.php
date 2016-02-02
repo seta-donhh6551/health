@@ -15,10 +15,10 @@ function send_mail_helper($mailto,$subject,$mailcontent,$listfile=array()){
         $mail->Host       = "ssl://smtp.gmail.com";      // sets GMAIL as the SMTP server
         $mail->Port       = 465;                   // set the SMTP port for the GMAIL server
         $mail->Username   = "hastaronline@gmail.com";  // GMAIL username
-        $mail->Password   = "0974128483";            // GMAIL password
-        $mail->AddReplyTo('hastaronline@gmail.com', 'PHPANDMYSQL.NET');
+        $mail->Password   = "0974136509";            // GMAIL password
+        $mail->AddReplyTo('hastaronline@gmail.com', 'LIFERESPECT.NET');
         $mail->AddAddress($mailto, '0');
-        $mail->SetFrom('hastaronline@gmail.com','PHPANDMYSQL.NET');
+        $mail->SetFrom('hastaronline@gmail.com','LIFERESPECT.NET');
 		$mail->IsHTML(true);
 		$mail->CharSet  = 'UTF-8';
         $mail->Subject = $subject;

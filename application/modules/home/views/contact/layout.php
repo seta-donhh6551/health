@@ -7,21 +7,21 @@
 <link rel="author" href="https://plus.google.com/102870804259820301805" />
 <link rel="canonical" href="<?php echo base_url(); ?>" />
 <link rel="shortcut icon" href="<?php echo base_url(); ?>favicon.ico" />
-<meta name="keywords" content="<?php echo $config['config_key']; ?>" />
-<meta name="description" content="<?php echo $config['config_des']; ?>" />
+<meta name="keywords" content="Contact us" />
+<meta name="description" content="Contact with us" />
 <meta property="og:type" content="blog" />
-<meta property="og:title" content="<?php echo $config['config_title']; ?>" />
-<meta property="og:description" content="<?php echo $config['config_des']; ?>" />
+<meta property="og:title" content="<?php echo $title; ?>" />
+<meta property="og:description" content="Contact with us" />
 <meta property="og:url" content="<?php echo base_url(); ?>" />
-<meta property="og:site_name" content="<?php echo $config['config_title']; ?>" />
-<meta name="twitter:card" content="summary" />
-<link rel="stylesheet" href="<?php echo base_url();?>public/styles/newstyle.css" type="text/css" media="screen" />
+<meta property="og:site_name" content="<?php echo $title; ?>" />
+<meta property="fb:admins" content="100003239486888"/>
+<link rel="stylesheet" href="<?php echo base_url();?>public/styles/style.css" type="text/css" media="screen" />
 <?php $this->load->view("scripts");?>
 </head>
 
 <body>
 <?php $this->load->view("header");?>
-<div id="main">
+<div id="bottom">
     <?php $this->load->view("contact/content"); ?>
     <?php $this->load->view("footer"); ?>
 </div>

@@ -4,59 +4,40 @@
 		   parent::__construct();
 		   $this->load->helper("url");
 		   $this->load->model("model_home");
-		   $this->load->model("mindex");
-		   $this->load->helper('main_helper');
            $this->load->helper('mail_helper');
-		   $this->load->model("model_technology");
 		   $this->load->library("email");
 	   }
 	   public function index(){
 		   $data['listcate'] = $this->listcate();
-		   $data['newest'] 		= $this->new_posts();
-	   	   $data['support'] 	= $this->support();
-		   $data['access'] 		= $this->access();
-		   $data['online'] 		= $this->online();
-		   $data['config'] 		= $this->config();
-		   $data['category']   	= $this->model_technology->listcago();
-		   $data['contact'] 	= $this->model_home->contact();
-		   $data['students']    = $this->model_home->random_student();
-		   $data['subjects']    = $this->model_home->subjects();
-		   $data['eq'] 			= "4";
-		   $data['title'] = "Liên hệ với chúng tôi";
+		   $data['config'] = $this->config();
+		   $data['newest'] = $this->new_posts(4);
+		   $data['rancates'] = $this->model_home->getcates(4, 6);
+		   $data['randompost'] = $this->randomquest(45);
+		   $data['title'] = "Contact us";
 		   $this->load->view("contact/layout",$data);
 	   }
 	   public function ajax(){
-		   $name  = $this->fillter($this->input->post("name"));
-		   $email = $this->fillter($this->input->post("email"));
-		   $phone = $this->fillter($this->input->post("phone"));
-		   $info  =  $this->fillter($this->input->post("noi"));
-		   $ok1   = $ok2 = "";
-		   if($name != NULL && $email != NULL && $info != NULL && $phone != NULL){
-				$null = "/^[a-zA-Z]{1}[a-zA-Z0-9._]{3,25}\@[a-zA-Z0-9]{3,}\.[a-zA-Z.]{2,8}$/";
-				$pho =  "/^[0]{1}[0-9]{8,10}$/";
-				if(preg_match($null,$email)){
-					$ok1 = TRUE;
-				}else{
-					echo "Email không hợp lệ <br />";
-				}
-				if(preg_match($pho,$phone)){
-					$ok2 = TRUE;
-				}else{
-					echo "Số điện thoại không hợp lệ<br />";
-				}
-				if($ok1 == TRUE && $ok2 == TRUE){
-					$data = array(
-							"con_name" => $name,
-							"con_email" => $email,
-							"con_phone" => $phone,
-							"con_full" => $info,
-							"con_date" => date("d/m/Y - h:i:s")
-						);
-					$this->sendmail($data);
-					$this->model_home->insert_contact($data);
-					echo "<span style='color:#0F0;font-weight:bold;'>Ý kiến của bạn đã được gửi,chúng tôi sẽ sớm liên hệ với bạn.</span>";
-				}
+		   $name  = $this->utility->fillter($this->input->post("name"));
+		   $email = $this->utility->fillter($this->input->post("email"));
+		   $phone = $this->utility->fillter($this->input->post("phone"));
+		   $info  =  $this->utility->fillter($this->input->post("info"));
+		   $flag  = false;
+			$null = "/^[a-zA-Z]{1}[a-zA-Z0-9._]{3,25}\@[a-zA-Z0-9]{3,}\.[a-zA-Z.]{2,8}$/";
+			if(preg_match($null,$email)){
+				$flag = true;
 			}else{
+				echo "Email is not valid <br />";
+			}
+			if($flag){
+				$data = array(
+						"con_name" => $name,
+						"con_email" => $email,
+						"con_phone" => $phone,
+						"con_full" => $info,
+						"con_date" => date("d/m/Y - h:i:s")
+					);
+				$this->sendmail($data);
+				$this->model_home->insert_contact($data);
 				echo 1;
 			}
 	   }
@@ -67,13 +48,13 @@
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
                     </head>
                     <body>
-                    <h2 style="font-size: 16px;">Contact from phpandmysql.net</h2>
+                    <h2 style="font-size: 16px;">CONTACT FROM LIFERESPECT.NET</h2>
                     <br/><br/>
                     <p>CONTACT INFORMATION</p>
 
             ';
-			$mesnger .= "Họ tên : ".$data['con_name']." <br />Email : ".$data['con_email']." <br />Phone : ".$data['con_phone']." <br />Nội dung : ".$data['con_full']."";
+			$mesnger .= "Full name : ".$data['con_name']." <br />Email : ".$data['con_email']." <br />Phone : ".$data['con_phone']." <br />Infomarintion : ".$data['con_full']."";
 			$mesnger .= '</body></html> ';
-			send_mail_helper('haanhdon@gmail.com', 'CONTACT FROM PHPANDMYSQL.NET', htmlspecialchars_decode($mesnger));
+			send_mail_helper('haanhdon@gmail.com', 'CONTACT FROM LIFERESPECT.NET', htmlspecialchars_decode($mesnger));
 	   }
    }

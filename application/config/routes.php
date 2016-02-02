@@ -47,6 +47,7 @@ $route['([a-zA-Z0-9-_]+)/([a-zA-Z0-9-_]+)/(:num)'] = "home/category/categorie/(:
 //$route['([a-zA-Z0-9-_]+)-for-kids/([a-zA-Z0-9-_]+)'] = "home/category/types";
 //$route['([a-zA-Z0-9-_]+)-for-kids/([a-zA-Z0-9-_]+)/(:num)'] = "home/category/types/(:num)";
 $route['search'] = "home/search";
+$route['contact'] = "home/contact";
 //$route['quiz-questions'] = "home/question/index";
 
 // admin

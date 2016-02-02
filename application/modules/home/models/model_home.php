@@ -3,6 +3,7 @@
 		protected $_table = "tbl_posts";
 		protected $_category = "tbl_category";
 		protected $_categorie = "tbl_categorie";
+		protected $_contact = "tbl_contact";
 		public function __construct(){
 			parent::__construct();
 			$this->load->database();
@@ -58,5 +59,8 @@
 		public function randomquest($length){
 			$query = $this->db->query("select * from $this->_table inner join tbl_category on tbl_category.cate_id = tbl_posts.cate_id where LENGTH (post_title) < $length order by rand() limit 4");
 			return $query->result_array();
+		}
+		public function insert_contact($data){
+			$this->db->insert($this->_contact,$data);
 		}
 	}

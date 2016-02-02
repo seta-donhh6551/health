@@ -38,6 +38,8 @@
         <?php if(isset($listcate)){ foreach($listcate as $menu){ ?>
         <li><a href="<?php echo base_url().$menu['cate_rewrite']; ?>.html" title="<?php echo $menu['cate_name']; ?>"><!--span class="icon"></span--><?php echo $menu['cate_name']; ?></a></li>
         <?php } } ?>
+		<li><a href="javascript:void(0)" title="Drugs"><span class="icon"></span>Drugs</a></li>
+		<li><a href="javascript:void(0)" title="Pictures"><span class="icon"></span>Pictures</a></li>
         <li><a href="<?php echo base_url(); ?>contact.html" title="Contact"><span class="icon"></span>Contact</a></li>
       </ul>
     </div>

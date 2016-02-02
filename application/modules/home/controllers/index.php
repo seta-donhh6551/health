@@ -27,8 +27,8 @@ class Index extends MY_Controller
 		$data['catethree'] = $this->model_home->cateInfo(6);
 		$data['listthree'] = $this->model_home->getquest(6, 9);
 		$data['menuthree'] = $this->model_home->getcates(6, 12);
-		$data['catefive'] = $this->model_home->cateInfo(2);
-		$data['listfive'] = $this->model_home->getquest(2, 4);
+//		$data['catefive'] = $this->model_home->cateInfo(2);
+//		$data['listfive'] = $this->model_home->getquest(2, 4);
 		$data['menufive'] = $this->model_home->getcates(4, 6);
 		$data['randompost'] = $this->randomquest(45);
 
