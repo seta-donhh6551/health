@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 01, 2016 at 10:58 AM
+-- Generation Time: Feb 02, 2016 at 09:13 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -118,11 +118,11 @@ CREATE TABLE IF NOT EXISTS `tbl_category` (
 --
 
 INSERT INTO `tbl_category` (`cate_id`, `cate_name`, `cate_title`, `cate_rewrite`, `cate_info`, `cate_ext`, `cate_images`, `cate_keys`, `cate_description`, `cate_status`, `cate_order`) VALUES
-(1, 'Pictures', '', 'pictures', 'Geriatric medicine', 'Geriatric medicine is the term related to the diagnosis, treatment and prevention of disease in older people and the problems specific to aging.', 'HTC_One_review.jpg', 'Geriatric medicine', 'Geriatric medicine is the term related to the diagnosis, treatment and prevention of disease in older people and the problems specific to aging.', 1, 3),
-(2, 'Pediatrics', NULL, 'pediatrics', 'Pediatrics is the filed that deals with the development, care, and diseases of babies and children', 'Pediatrics is the field of medicine that is concerned with the health of infants, children, and adolescents; their growth and development; and their opportunity to achieve full potential as adults.', 'pediatrician.jpg', 'Pediatrics', 'Pediatrics is the field of medicine that is concerned with the health of infants, children, and adolescents; their growth and development; and their opportunity to achieve full potential as adults.', 1, 4),
+(1, 'Pictures', '', 'pictures', 'Geriatric medicine', 'Geriatric medicine is the term related to the diagnosis, treatment and prevention of disease in older people and the problems specific to aging.', 'HTC_One_review.jpg', 'Geriatric medicine', 'Geriatric medicine is the term related to the diagnosis, treatment and prevention of disease in older people and the problems specific to aging.', 0, 3),
+(2, 'Pediatrics', NULL, 'pediatrics', 'Pediatrics is the filed that deals with the development, care, and diseases of babies and children', 'Pediatrics is the field of medicine that is concerned with the health of infants, children, and adolescents; their growth and development; and their opportunity to achieve full potential as adults.', 'pediatrician.jpg', 'Pediatrics', 'Pediatrics is the field of medicine that is concerned with the health of infants, children, and adolescents; their growth and development; and their opportunity to achieve full potential as adults.', 0, 4),
 (3, 'Parents', '', 'parents', 'Internal medicine is the medical specialty dedicated to the diagnosis and medical treatment of adults', 'Internal medicine or general medicine is  the branch of medical science concerned with the diagnosis and nonsurgical treatment of disorders of the internal structures of the body', 'parents.jpg', 'Internal medecine', 'Internal medicine or general medicine is  the branch of medical science concerned with the diagnosis and nonsurgical treatment of disorders of the internal structures of the body', 1, 2),
 (4, 'Living healthy', 'Dermatology is the branch of medicine dealing with the skin and its diseases', 'living-healthy', 'Dermatosis are diseases of the integumentary system,  affecting the surface of the body: skin, fur, hair, nails, and skin glands', 'Dermatology is the branch of medicine concerned with the diagnosis, treatment, and prevention of diseases of the skin, hair, nails, oral cavity and genitals, cosmetic care and enhancement. It is a specialty with both medical and surgical aspects.', 'living-healthy.jpg', 'Dermatology', 'Dermatology is the branch of medicine concerned with the diagnosis, treatment, and prevention of diseases of the skin, hair, nails, oral cavity and genitals, cosmetic care and enhancement. It is a specialty with both medical and surgical aspects.', 1, 0),
-(5, 'Drugs', '', 'drugs', 'Drugs', 'Surgery is the branch of medicine that employs operations in the treatment of disease or injury,  involving cutting, abrading, suturing, or otherwise physically changing body tissues and organs.', 'kids-cooking-in-kitchen.jpg', 'Drugs', 'Surgery is the branch of medicine that employs operations in the treatment of disease or injury,  involving cutting, abrading, suturing, or otherwise physically changing body tissues and organs.', 1, 2),
+(5, 'Drugs', '', 'drugs', 'Drugs', 'Surgery is the branch of medicine that employs operations in the treatment of disease or injury,  involving cutting, abrading, suturing, or otherwise physically changing body tissues and organs.', 'kids-cooking-in-kitchen.jpg', 'Drugs', 'Surgery is the branch of medicine that employs operations in the treatment of disease or injury,  involving cutting, abrading, suturing, or otherwise physically changing body tissues and organs.', 0, 2),
 (6, 'Diseases', '', 'diseases', 'Allergies are abnormal immune system reactions to things that are typically harmless to most people.', 'allergy is An abnormally high sensitivity to certain substances, such as pollens, foods, or microorganisms. Common indications of allergy may include sneezing, itching, and skin rashes.', 'allergy.jpg', 'Allergy', 'Allergy is An abnormally high sensitivity to certain substances, such as pollens, foods, or microorganisms. Common indications of allergy may include sneezing, itching, and skin rashes.', 1, 1);
 
 -- --------------------------------------------------------
@@ -160,14 +160,16 @@ CREATE TABLE IF NOT EXISTS `tbl_contact` (
   `con_phone` varchar(50) CHARACTER SET utf8 NOT NULL,
   `con_full` text CHARACTER SET utf8,
   `con_date` date NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_contact`
 --
 
 INSERT INTO `tbl_contact` (`con_id`, `con_name`, `con_email`, `con_phone`, `con_full`, `con_date`) VALUES
-(18, 'Nguyễn Văn Minh', 'minhdung149@gmail.com', '01689985210', '\nEm đọc trên diễn dàn vnzoom có thấy anh đang tìm người học lớp PHP. hiện còn cần người nữa không anh? và hình thức học ntn? ở đâu và học phí như nào ạ? e cũng đang quan tâm đến lập trình php. Thanks anh', '0000-00-00');
+(18, 'Nguyễn Văn Minh', 'minhdung149@gmail.com', '01689985210', '\nEm đọc trên diễn dàn vnzoom có thấy anh đang tìm người học lớp PHP. hiện còn cần người nữa không anh? và hình thức học ntn? ở đâu và học phí như nào ạ? e cũng đang quan tâm đến lập trình php. Thanks anh', '0000-00-00'),
+(27, 'haanhdon', 'haanhdon@gmail.com', '0974136509', 'fgffffffffff', '0000-00-00'),
+(28, 'haanhdon', 'haanhdon@gmail.com', '', 'dddddddddđ', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -806,7 +808,7 @@ MODIFY `config_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 -- AUTO_INCREMENT for table `tbl_contact`
 --
 ALTER TABLE `tbl_contact`
-MODIFY `con_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=27;
+MODIFY `con_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=29;
 --
 -- AUTO_INCREMENT for table `tbl_contact_info`
 --
